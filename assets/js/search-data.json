@@ -1,28 +1,28 @@
 {"0": {
     "doc": "BatteryMu",
     "title": "BatteryMu",
-    "content": "A live battery monitor for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download BatteryMu-1.0.0.muxapp View Source on GitHub . ",
+    "content": "A live battery monitor for MustardOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download BatteryMu-1.0.0.muxapp View Source on GitHub . ",
     "url": "/apps/batterymu/",
     
     "relUrl": "/apps/batterymu/"
   },"1": {
     "doc": "BatteryMu",
     "title": "Features",
-    "content": ". | Real-Time Telemetry: Live charge %, voltage window, and charging/discharging state. | Battery Health Analysis: Design vs. current voltage readout and calculated battery health. | muOS Charge History: Charge history graph powered by the muOS battery_usage tracker (last charged timestamp, session time, capacity at unplug). | Universal Hardware Fallback: Reads muOS pre-parsed battery values first, falling back to raw AXP2202 sysfs nodes across every RG35XX variant. | 8-Color Theme Picker: Shared in-app theme palette with ClockMu and JarMu. | Safe Scaling: Letterboxed 640×480 render — safe on every RG35XX panel variant and HDMI video output. | . ",
+    "content": ". | Real-Time Telemetry: Live charge %, voltage window, and charging/discharging state. | Battery Health Analysis: Design vs. current voltage readout and calculated battery health. | MustardOS Charge History: Charge history graph powered by the MustardOS battery_usage tracker (last charged timestamp, session time, capacity at unplug). | Universal Hardware Fallback: Reads MustardOS pre-parsed battery values first, falling back to raw AXP2202 sysfs nodes across every RG35XX variant. | 8-Color Theme Picker: Shared in-app theme palette with ClockMu and JarMu. | Safe Scaling: Letterboxed 640×480 render — safe on every RG35XX panel variant and HDMI video output. | . ",
     "url": "/apps/batterymu/#features",
     
     "relUrl": "/apps/batterymu/#features"
   },"2": {
     "doc": "BatteryMu",
     "title": "Gamepad Controls",
-    "content": "| Button | Action | . | D-pad Up/Down | Scroll through battery metrics &amp; session logs | . | X | Cycle between 8 in-app theme colors | . | Y | Toggle extended voltage and health telemetry | . | B | Quit to muOS | . ",
+    "content": "| Button | Action | . | D-pad Up/Down | Scroll through battery metrics &amp; session logs | . | X | Cycle between 8 in-app theme colors | . | Y | Toggle extended voltage and health telemetry | . | B | Quit to MustardOS | . ",
     "url": "/apps/batterymu/#gamepad-controls",
     
     "relUrl": "/apps/batterymu/#gamepad-controls"
   },"3": {
     "doc": "BatteryMu",
     "title": "Technical Architecture",
-    "content": "BatteryMu targets the X-Powers AXP2202 Power Management IC (PMIC) present on all Allwinner H700 Anbernic handhelds: . /sys/class/power_supply/axp2202-battery/ ├── capacity # Current battery percentage ├── voltage_now # Real-time microvolts ├── current_now # Discharge / charge current └── status # Charging / Discharging / Full . When running bare without muOS helper daemons, BatteryMu reads these nodes directly, ensuring continuous accuracy even during testing. ",
+    "content": "BatteryMu targets the X-Powers AXP2202 Power Management IC (PMIC) present on all Allwinner H700 Anbernic handhelds: . /sys/class/power_supply/axp2202-battery/ ├── capacity # Current battery percentage ├── voltage_now # Real-time microvolts ├── current_now # Discharge / charge current └── status # Charging / Discharging / Full . When running bare without MustardOS helper daemons, BatteryMu reads these nodes directly, ensuring continuous accuracy even during testing. ",
     "url": "/apps/batterymu/#technical-architecture",
     
     "relUrl": "/apps/batterymu/#technical-architecture"
@@ -71,14 +71,14 @@
   },"10": {
     "doc": "ClockMu",
     "title": "ClockMu",
-    "content": "An alarm clock for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download ClockMu-1.0.0.muxapp View Source on GitHub . ",
+    "content": "An alarm clock for MustardOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download ClockMu-1.0.0.muxapp View Source on GitHub . ",
     "url": "/apps/clockmu/",
     
     "relUrl": "/apps/clockmu/"
   },"11": {
     "doc": "ClockMu",
     "title": "Features",
-    "content": ". | Multiple Alarms: Set and manage multiple alarms with customized labels. | Repeat Schedules: Configure alarms for Daily, Once, or specific days of the week. | Custom Snooze: Individual snooze durations per alarm. | 15-Minute Presets: Fast preset time picker to quickly set standard times. | 8-Color In-App Themes: Choose between Mustard, Bloody Red, Forest Green, Funky Purple, Intense Orange, Midnight Black, Ocean Blue, and Yoga White. | Data Persistence: Alarms and preferences persist across reboots via $CLOCKMU_DATA independent of LÖVE save-dir under muOS bind storage. | Volume Handling: Launcher maxes volume on alarm start and restores previous volume upon exit. | . ",
+    "content": ". | Multiple Alarms: Set and manage multiple alarms with customized labels. | Repeat Schedules: Configure alarms for Daily, Once, or specific days of the week. | Custom Snooze: Individual snooze durations per alarm. | 15-Minute Presets: Fast preset time picker to quickly set standard times. | 8-Color In-App Themes: Choose between Mustard, Bloody Red, Forest Green, Funky Purple, Intense Orange, Midnight Black, Ocean Blue, and Yoga White. | Data Persistence: Alarms and preferences persist across reboots via $CLOCKMU_DATA independent of LÖVE save-dir under MustardOS bind storage. | Volume Handling: Launcher maxes volume on alarm start and restores previous volume upon exit. | . ",
     "url": "/apps/clockmu/#features",
     
     "relUrl": "/apps/clockmu/#features"
@@ -92,7 +92,7 @@
   },"13": {
     "doc": "ClockMu",
     "title": "Main Alarm Screen",
-    "content": "| Button | Action | . | D-pad Up/Down | Navigate alarm list | . | A | Edit selected alarm | . | X | Toggle alarm on / off | . | Y | Add new alarm | . | L1 | Delete selected alarm | . | B | Quit to muOS | . ",
+    "content": "| Button | Action | . | D-pad Up/Down | Navigate alarm list | . | A | Edit selected alarm | . | X | Toggle alarm on / off | . | Y | Add new alarm | . | L1 | Delete selected alarm | . | B | Quit to MustardOS | . ",
     "url": "/apps/clockmu/#main-alarm-screen",
     
     "relUrl": "/apps/clockmu/#main-alarm-screen"
@@ -127,7 +127,7 @@
   },"18": {
     "doc": "fskit Framework",
     "title": "fskit Framework",
-    "content": "A modular, lightweight LÖVE2D kit providing multi-resolution screen management, theme synchronization, gamepad input abstraction, and persistent state for muOS Andromeda. All 5 companion applications in the fragilesilver suite (ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu) are built on fskit. ",
+    "content": "A modular, lightweight LÖVE2D kit providing multi-resolution screen management, theme synchronization, gamepad input abstraction, and persistent state for MustardOS Andromeda. All 5 companion applications in the fragilesilver suite (ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu) are built on fskit. ",
     "url": "/toolkits/fskit/",
     
     "relUrl": "/toolkits/fskit/"
@@ -160,29 +160,29 @@
     
     "relUrl": "/toolkits/fskit/#input-abstraction-contract"
   },"23": {
-    "doc": "muOS Apps",
-    "title": "muOS Handheld App Suite",
-    "content": "Custom utilities designed specifically for muOS Andromeda on the Anbernic RG35XX handheld family. All applications in this suite share the fskit UI toolkit, ensuring identical 10-color themes, letterboxed multi-resolution display profiles, and tactile button controls. ",
-    "url": "/apps/#muos-handheld-app-suite",
+    "doc": "MustardOS Apps",
+    "title": "MustardOS Handheld App Suite",
+    "content": "Custom utilities designed specifically for MustardOS Andromeda on the Anbernic RG35XX handheld family. All applications in this suite share the fskit UI toolkit, ensuring identical 10-color themes, letterboxed multi-resolution display profiles, and tactile button controls. ",
+    "url": "/apps/#mustardos-handheld-app-suite",
     
-    "relUrl": "/apps/#muos-handheld-app-suite"
+    "relUrl": "/apps/#mustardos-handheld-app-suite"
   },"24": {
-    "doc": "muOS Apps",
+    "doc": "MustardOS Apps",
     "title": "Application Directory",
     "content": "| App | Version | Highlights | Guide | . | ClockMu | v1.0.0 | Multi-alarm clock, custom snooze, 15-min presets | Read More → | . | JarMu | v1.0.0 | “Shake the jar” weighted random game picker | Read More → | . | BatteryMu | v1.0.0 | Real-time voltage, charge %, health &amp; history graphs | Read More → | . | SwapMu | v1.0.0 | Pickle ↔ RetroArch SRAM save swapper &amp; safe backups | Read More → | . | ScrapMu | v0.2.0 | Skyscraper template box art &amp; Artie metadata scraper | Read More → | . ",
     "url": "/apps/#application-directory",
     
     "relUrl": "/apps/#application-directory"
   },"25": {
-    "doc": "muOS Apps",
+    "doc": "MustardOS Apps",
     "title": "Hardware Compatibility",
-    "content": "Every app is developed and tested for the Allwinner H700 SoC running muOS Andromeda (2606.0+): . | Device | Panel Resolution | Compatibility Status | . | Anbernic RG35XX Pro | 640×480 IPS | Primary Target &amp; Verified | . | Anbernic RG35XX Plus | 640×480 IPS | Fully Supported | . | Anbernic RG35XX H | 640×480 IPS | Fully Supported | . | Anbernic RG35XX SP | 640×480 IPS | Fully Supported | . | Anbernic RG35XX (2024) | 640×480 IPS | Fully Supported | . | HDMI Video Out | Scaled 640×480 | Supported | . Installation Note: All apps install using the built-in muOS Archive Manager. Check out the step-by-step Installation Guide for instructions on transferring .muxapp files to your SD card. ",
+    "content": "Every app is developed and tested for the Allwinner H700 SoC running MustardOS Andromeda (2606.0+): . | Device | Panel Resolution | Compatibility Status | . | Anbernic RG35XX Pro | 640×480 IPS | Primary Target &amp; Verified | . | Anbernic RG35XX Plus | 640×480 IPS | Fully Supported | . | Anbernic RG35XX H | 640×480 IPS | Fully Supported | . | Anbernic RG35XX SP | 640×480 IPS | Fully Supported | . | Anbernic RG35XX (2024) | 640×480 IPS | Fully Supported | . | HDMI Video Out | Scaled 640×480 | Supported | . Installation Note: All apps install using the built-in MustardOS Archive Manager. Check out the step-by-step Installation Guide for instructions on transferring .muxapp files to your SD card. ",
     "url": "/apps/#hardware-compatibility",
     
     "relUrl": "/apps/#hardware-compatibility"
   },"26": {
-    "doc": "muOS Apps",
-    "title": "muOS Apps",
+    "doc": "MustardOS Apps",
+    "title": "MustardOS Apps",
     "content": " ",
     "url": "/apps/",
     
@@ -232,7 +232,7 @@
   },"33": {
     "doc": "Toolkits & Libraries",
     "title": "fskit — Handheld UI &amp; Runtime Kit",
-    "content": "A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state for muOS. | Documentation: fskit Architecture Details → | . ",
+    "content": "A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state for MustardOS. | Documentation: fskit Architecture Details → | . ",
     "url": "/toolkits/#fskit--handheld-ui--runtime-kit",
     
     "relUrl": "/toolkits/#fskit--handheld-ui--runtime-kit"
@@ -253,7 +253,7 @@
   },"36": {
     "doc": "Welcome",
     "title": "About Me",
-    "content": "Hi, I’m fragilesilver. I build purposeful, bloat-free software for retro gaming handhelds (muOS on Anbernic RG35XX) and real-time interactive web games. My work focuses on snappy performance, tactile gamepad controls, and clean architecture that respects hardware resources. ",
+    "content": "Hi, I’m fragilesilver. I build purposeful, bloat-free software for retro gaming handhelds (MustardOS on Anbernic RG35XX) and real-time interactive web games. My work focuses on snappy performance, tactile gamepad controls, and clean architecture that respects hardware resources. ",
     "url": "/#about-me",
     
     "relUrl": "/#about-me"
@@ -266,11 +266,11 @@
     "relUrl": "/#featured-works"
   },"38": {
     "doc": "Welcome",
-    "title": "muOS Handheld App Suite",
-    "content": "A cohesive suite of 5 custom applications built on LÖVE2D and fskit for the Anbernic Allwinner H700 family running muOS Andromeda: . | ClockMu (v1.0.0) — Alarm clock with repeat schedules, snooze, 15-minute presets, and 8 color themes. | JarMu (v1.0.0) — “Shake the jar” weighted random game picker with SD1/SD2 scanning, in-app genre editing, and retro CRT shaders. | BatteryMu (v1.0.0) — Live battery monitor with voltage telemetry, battery health analysis, and muOS usage tracking. | SwapMu (v1.0.0) — SRAM save swapper bridging Pickle and RetroArch saves with 3-tier safe backup verification. | ScrapMu (v0.2.0) — Skyscraper template box art compositing (Retro Dither) with Artie descriptions and a live web dashboard. | . All muOS apps are packaged as standalone .muxapp archives. Check out the Installation Guide to learn how to install them via Archive Manager. ",
-    "url": "/#muos-handheld-app-suite",
+    "title": "MustardOS Handheld App Suite",
+    "content": "A cohesive suite of 5 custom applications built on LÖVE2D and fskit for the Anbernic Allwinner H700 family running MustardOS Andromeda: . | ClockMu (v1.0.0) — Alarm clock with repeat schedules, snooze, 15-minute presets, and 8 color themes. | JarMu (v1.0.0) — “Shake the jar” weighted random game picker with SD1/SD2 scanning, in-app genre editing, and retro CRT shaders. | BatteryMu (v1.0.0) — Live battery monitor with voltage telemetry, battery health analysis, and MustardOS usage tracking. | SwapMu (v1.0.0) — SRAM save swapper bridging Pickle and RetroArch saves with 3-tier safe backup verification. | ScrapMu (v0.2.0) — Skyscraper template box art compositing (Retro Dither) with Artie descriptions and a live web dashboard. | . All MustardOS apps are packaged as standalone .muxapp archives. Check out the Installation Guide to learn how to install them via Archive Manager. ",
+    "url": "/#mustardos-handheld-app-suite",
     
-    "relUrl": "/#muos-handheld-app-suite"
+    "relUrl": "/#mustardos-handheld-app-suite"
   },"39": {
     "doc": "Welcome",
     "title": "CHMS Battleship Royale",
@@ -281,14 +281,14 @@
   },"40": {
     "doc": "Welcome",
     "title": "fskit — Handheld UI Framework",
-    "content": "A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state for muOS. ",
+    "content": "A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state for MustardOS. ",
     "url": "/#fskit--handheld-ui-framework",
     
     "relUrl": "/#fskit--handheld-ui-framework"
   },"41": {
     "doc": "Welcome",
     "title": "Core Disciplines",
-    "content": "| Discipline | Focus &amp; Stack | Representative Project | . | Handheld &amp; Embedded Systems | Lua, LÖVE2D, muOS Andromeda, Allwinner H700, Mali GPU | muOS Apps | . | Interactive &amp; Multiplayer Web | TypeScript, JavaScript, Firebase Realtime DB, Canvas | CHMS Battleship | . | Toolkits &amp; Frameworks | Modular UI, Gamepad Abstraction, Theme Engines | fskit | . ",
+    "content": "| Discipline | Focus &amp; Stack | Representative Project | . | Handheld &amp; Embedded Systems | Lua, LÖVE2D, MustardOS Andromeda, Allwinner H700, Mali GPU | MustardOS Apps | . | Interactive &amp; Multiplayer Web | TypeScript, JavaScript, Firebase Realtime DB, Canvas | CHMS Battleship | . | Toolkits &amp; Frameworks | Modular UI, Gamepad Abstraction, Theme Engines | fskit | . ",
     "url": "/#core-disciplines",
     
     "relUrl": "/#core-disciplines"
@@ -302,7 +302,7 @@
   },"43": {
     "doc": "Welcome",
     "title": "Connect &amp; Code",
-    "content": ". | GitHub: github.com/fragilesilver | Firmware Community: muOS.dev | . ",
+    "content": ". | GitHub: github.com/fragilesilver | Firmware Community: MustardOS (muos.dev) | . ",
     "url": "/#connect--code",
     
     "relUrl": "/#connect--code"
@@ -315,11 +315,11 @@
     "relUrl": "/"
   },"45": {
     "doc": "Installation Guide",
-    "title": "muOS Package Installation Guide",
-    "content": "How to install .muxapp application packages on muOS Andromeda using the built-in Archive Manager. All companion applications developed by fragilesilver (ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu) are distributed as standalone .muxapp archives. ",
-    "url": "/guide/install/#muos-package-installation-guide",
+    "title": "MustardOS Package Installation Guide",
+    "content": "How to install .muxapp application packages on MustardOS Andromeda using the built-in Archive Manager. All companion applications developed by fragilesilver (ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu) are distributed as standalone .muxapp archives. ",
+    "url": "/guide/install/#mustardos-package-installation-guide",
     
-    "relUrl": "/guide/install/#muos-package-installation-guide"
+    "relUrl": "/guide/install/#mustardos-package-installation-guide"
   },"46": {
     "doc": "Installation Guide",
     "title": "Step-by-Step Instructions",
@@ -344,14 +344,14 @@
   },"49": {
     "doc": "Installation Guide",
     "title": "Step 3: Open Archive Manager",
-    "content": "Insert the SD card back into your Anbernic handheld and boot into muOS Andromeda. On the home menu: . | Navigate to Applications. | Scroll down and launch Archive Manager. | . ",
+    "content": "Insert the SD card back into your Anbernic handheld and boot into MustardOS Andromeda. On the home menu: . | Navigate to Applications. | Scroll down and launch Archive Manager. | . ",
     "url": "/guide/install/#step-3-open-archive-manager",
     
     "relUrl": "/guide/install/#step-3-open-archive-manager"
   },"50": {
     "doc": "Installation Guide",
     "title": "Step 4: Extract and Install",
-    "content": "Inside Archive Manager: . | Highlight your downloaded .muxapp file in the list. | Press A to extract. | muOS will automatically unpack the application binary, launcher script, and custom icon into the system application catalogue. | . ",
+    "content": "Inside Archive Manager: . | Highlight your downloaded .muxapp file in the list. | Press A to extract. | MustardOS will automatically unpack the application binary, launcher script, and custom icon into the system application catalogue. | . ",
     "url": "/guide/install/#step-4-extract-and-install",
     
     "relUrl": "/guide/install/#step-4-extract-and-install"
@@ -386,7 +386,7 @@
   },"55": {
     "doc": "Installation Guide",
     "title": "Do I need SSH or terminal commands?",
-    "content": "No. Everything is installed using the standard muOS graphical interface. ",
+    "content": "No. Everything is installed using the standard MustardOS graphical interface. ",
     "url": "/guide/install/#do-i-need-ssh-or-terminal-commands",
     
     "relUrl": "/guide/install/#do-i-need-ssh-or-terminal-commands"
@@ -400,7 +400,7 @@
   },"57": {
     "doc": "JarMu",
     "title": "JarMu",
-    "content": "A “shake the jar” random game picker for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download JarMu-1.0.0.muxapp View Source on GitHub . | Splash Screen | The Jar &amp; Shake Meter | . | | | . ",
+    "content": "A “shake the jar” random game picker for MustardOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download JarMu-1.0.0.muxapp View Source on GitHub . | Splash Screen | The Jar &amp; Shake Meter | . | | | . ",
     "url": "/apps/jarmu/",
     
     "relUrl": "/apps/jarmu/"
@@ -421,7 +421,7 @@
   },"60": {
     "doc": "JarMu",
     "title": "Jar Screen (Main)",
-    "content": "| Button | Action | . | Hold A | Build up shake power | . | Release A | Tip the jar (sweet spot = perfect shake) | . | L1 / R1 | Open Filters menu | . | Y | Toggle “Surprise Me” mode | . | X | Cycle theme color | . | SELECT | Toggle procedural sound effects | . | B | Quit to muOS | . ",
+    "content": "| Button | Action | . | Hold A | Build up shake power | . | Release A | Tip the jar (sweet spot = perfect shake) | . | L1 / R1 | Open Filters menu | . | Y | Toggle “Surprise Me” mode | . | X | Cycle theme color | . | SELECT | Toggle procedural sound effects | . | B | Quit to MustardOS | . ",
     "url": "/apps/jarmu/#jar-screen-main",
     
     "relUrl": "/apps/jarmu/#jar-screen-main"
@@ -449,7 +449,7 @@
   },"64": {
     "doc": "ScrapMu",
     "title": "ScrapMu",
-    "content": "A box art and metadata scraper for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download ScrapMu-0.2.0.muxapp View Source on GitHub . ",
+    "content": "A box art and metadata scraper for MustardOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download ScrapMu-0.2.0.muxapp View Source on GitHub . ",
     "url": "/apps/scrapmu/",
     
     "relUrl": "/apps/scrapmu/"
@@ -463,7 +463,7 @@
   },"66": {
     "doc": "ScrapMu",
     "title": "Features",
-    "content": ". | Quota Conservation: Only 1 API query per ROM saves daily ScreenScraper quota. | Template Compositing: Full support for Skyscraper artwork.xml templates, including Retro Dither Style. | Rich Text Metadata: Formats complete game descriptions, developer, publisher, year, and rating into the muOS catalogue. | Single ROM &amp; Batch Modes: Scrape full collections automatically or curate individual games with manual lookup refinement. | Embedded Web Dashboard: Run ScrapMu with an embedded HTTP server to monitor and initiate scrapes via Wi-Fi from your computer or phone. | . ",
+    "content": ". | Quota Conservation: Only 1 API query per ROM saves daily ScreenScraper quota. | Template Compositing: Full support for Skyscraper artwork.xml templates, including Retro Dither Style. | Rich Text Metadata: Formats complete game descriptions, developer, publisher, year, and rating into the MustardOS catalogue. | Single ROM &amp; Batch Modes: Scrape full collections automatically or curate individual games with manual lookup refinement. | Embedded Web Dashboard: Run ScrapMu with an embedded HTTP server to monitor and initiate scrapes via Wi-Fi from your computer or phone. | . ",
     "url": "/apps/scrapmu/#features",
     
     "relUrl": "/apps/scrapmu/#features"
@@ -477,7 +477,7 @@
   },"68": {
     "doc": "ScrapMu",
     "title": "Home Screen",
-    "content": "| Button | Action | . | D-pad Left/Right | Cycle template (Retro Dither, etc.) | . | A | Start scraping selected systems | . | X | Open Single ROM two-column scraper | . | SELECT | Open scraping &amp; account settings | . | B | Quit to muOS | . ",
+    "content": "| Button | Action | . | D-pad Left/Right | Cycle template (Retro Dither, etc.) | . | A | Start scraping selected systems | . | X | Open Single ROM two-column scraper | . | SELECT | Open scraping &amp; account settings | . | B | Quit to MustardOS | . ",
     "url": "/apps/scrapmu/#home-screen",
     
     "relUrl": "/apps/scrapmu/#home-screen"
@@ -491,7 +491,7 @@
   },"70": {
     "doc": "ScrapMu",
     "title": "Output Structure",
-    "content": "ScrapMu populates the standard muOS catalogue folders: . MUOS/info/catalogue/&lt;system&gt;/ ├── box/ # Template-rendered 3D/2D cover art (e.g. Retro Dither) ├── preview/ # Cached screenshot preview └── text/ # Artie-format metadata: synopsis, genre, rating &amp; release year . ",
+    "content": "ScrapMu populates the standard MustardOS catalogue folders: . MUOS/info/catalogue/&lt;system&gt;/ ├── box/ # Template-rendered 3D/2D cover art (e.g. Retro Dither) ├── preview/ # Cached screenshot preview └── text/ # Artie-format metadata: synopsis, genre, rating &amp; release year . ",
     "url": "/apps/scrapmu/#output-structure",
     
     "relUrl": "/apps/scrapmu/#output-structure"
@@ -505,7 +505,7 @@
   },"72": {
     "doc": "SwapMu",
     "title": "SwapMu",
-    "content": "A per-game SRAM save swapper between Pickle (muOS frontend libretro layer) and RetroArch, for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download SwapMu-1.0.0.muxapp View Source on GitHub . Andromeda Only: Pickle does not exist on Jacaranda, so there is nothing to swap against on older muOS releases. ",
+    "content": "A per-game SRAM save swapper between Pickle (MustardOS frontend libretro layer) and RetroArch, for MustardOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download SwapMu-1.0.0.muxapp View Source on GitHub . Andromeda Only: Pickle does not exist on Jacaranda, so there is nothing to swap against on older MustardOS releases. ",
     "url": "/apps/swapmu/",
     
     "relUrl": "/apps/swapmu/"

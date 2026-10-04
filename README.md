@@ -1,37 +1,34 @@
 # fragilesilver.github.io
 
 Official personal portfolio, showcase, and documentation website for **fragilesilver**, featuring:
-- **muOS Andromeda App Suite**:
-  - [ClockMu](https://fragilesilver.github.io/apps/clockmu) (Full-featured alarm clock)
-  - [JarMu](https://fragilesilver.github.io/apps/jarmu) ("Shake the jar" weighted random game picker)
-  - [BatteryMu](https://fragilesilver.github.io/apps/batterymu) (Live battery and health monitor)
-  - [SwapMu](https://fragilesilver.github.io/apps/swapmu) (SRAM save swapper between Pickle and RetroArch)
-  - [ScrapMu](https://fragilesilver.github.io/apps/scrapmu) (Box art and metadata scraper with template compositing)
+- **MustardOS Andromeda App Suite**:
+  - [ClockMu](https://fragilesilver.github.io/apps/clockmu/) (Full-featured alarm clock)
+  - [JarMu](https://fragilesilver.github.io/apps/jarmu/) ("Shake the jar" weighted random game picker)
+  - [BatteryMu](https://fragilesilver.github.io/apps/batterymu/) (Live battery and health monitor)
+  - [SwapMu](https://fragilesilver.github.io/apps/swapmu/) (SRAM save swapper between Pickle and RetroArch)
+  - [ScrapMu](https://fragilesilver.github.io/apps/scrapmu/) (Box art and metadata scraper with template compositing)
 - **Web & Games**:
-  - [CHMS Battleship Royale](https://fragilesilver.github.io/projects/chms-battleship) (Multiplayer classroom game with Cambridge IGCSE pseudocode challenges)
-- **muOS Installation Guide**:
-  - [Step-by-step .muxapp Guide](https://fragilesilver.github.io/guide/install)
+  - [CHMS Battleship Royale](https://fragilesilver.github.io/projects/chms-battleship/) (Multiplayer classroom game with Cambridge IGCSE pseudocode challenges)
+- **MustardOS Installation Guide**:
+  - [Step-by-step .muxapp Guide](https://fragilesilver.github.io/guide/install/)
 
 ## Tech Stack
-- **Framework**: [Astro](https://astro.build/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Deployment**: GitHub Pages via GitHub Actions
+- **Engine**: [Jekyll](https://jekyllrb.com/)
+- **Theme**: [Just the Docs](https://github.com/just-the-docs/just-the-docs) (Custom `fskit` Dark Theme)
+- **Deployment**: GitHub Pages (`gh-pages` branch)
 
 ## Local Development
 
 ```bash
-# Install dependencies
-npm install
+# Build static site
+export GEM_PATH="$HOME/.local/share/gem/ruby/3.4.0:/usr/lib/ruby/gems/3.4.0"
+export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"
+jekyll build
 
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build locally
-npm run preview
+# Serve locally
+jekyll serve
 ```
 
 ## License
 Open-source under MIT and GPL-3.0.
+
