@@ -1,0 +1,81 @@
+---
+import DeviceBadge from './DeviceBadge.astro';
+---
+
+<section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+      
+      <!-- Top announcement badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-blue-500/10 border border-blue-500/30 text-blue-300 mb-8 backdrop-blur-sm shadow-sm hover:border-purple-500/50 transition-colors">
+        <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
+        <span>muOS Andromeda App Suite & Projects by fragilesilver</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+        Handcrafted for handhelds. <br />
+        <span class="text-gradient">Engineered for fun.</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mb-8 leading-relaxed">
+        Specialized utilities for <strong class="text-white">muOS Andromeda</strong> on the Anbernic RG35XX family, plus multiplayer educational games and developer tools.
+      </p>
+
+      <!-- Hardware badge -->
+      <div class="mb-10">
+        <DeviceBadge device="Anbernic RG35XX Pro / Plus / H / SP / 2024" chipset="Allwinner H700" />
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex flex-wrap items-center justify-center gap-4 w-full sm:w-auto">
+        <a
+          href="/apps"
+          class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-[1.02] flex items-center justify-center gap-2"
+        >
+          <span>Explore muOS Apps</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+
+        <a
+          href="/projects/chms-battleship"
+          class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 transition-all flex items-center justify-center gap-2"
+        >
+          <span>CHMS Battleship Royale</span>
+        </a>
+
+        <a
+          href="/guide/install"
+          class="w-full sm:w-auto px-5 py-3.5 rounded-xl font-medium text-slate-400 hover:text-white transition-colors flex items-center justify-center gap-1.5 text-sm"
+        >
+          <span>Install Guide</span>
+          <span class="text-xs">↗</span>
+        </a>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-slate-800/80 w-full text-center">
+        <div class="p-3">
+          <div class="text-2xl sm:text-3xl font-bold font-mono text-blue-400">5 Apps</div>
+          <div class="text-xs text-slate-400 mt-1">Native muOS Suite</div>
+        </div>
+        <div class="p-3">
+          <div class="text-2xl sm:text-3xl font-bold font-mono text-purple-400">LÖVE2D</div>
+          <div class="text-xs text-slate-400 mt-1">Powered by fskit</div>
+        </div>
+        <div class="p-3">
+          <div class="text-2xl sm:text-3xl font-bold font-mono text-cyan-400">H700 SoC</div>
+          <div class="text-xs text-slate-400 mt-1">Hardware Optimized</div>
+        </div>
+        <div class="p-3">
+          <div class="text-2xl sm:text-3xl font-bold font-mono text-emerald-400">100% Free</div>
+          <div class="text-xs text-slate-400 mt-1">Open Source</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

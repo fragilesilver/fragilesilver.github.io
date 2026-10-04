@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+import InstallSteps from '../components/InstallSteps.astro';
+---
+
+<Layout
+  title="fragilesilver • Handheld Software & Creative Projects"
+  description="Home of ClockMu, JarMu, BatteryMu, SwapMu, ScrapMu for muOS Andromeda on Anbernic RG35XX, plus CHMS Battleship Royale."
+>
+  <!-- Hero Section -->
+  <Hero />
+
+  <!-- Main Projects Showcase -->
+  <section id="projects" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center text-center mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-purple-500/10 text-purple-400 border border-purple-500/30 mb-3">
+        <span>Software Showcase</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+        Apps, Games & Utilities
+      </h2>
+      <p class="text-slate-400 text-sm sm:text-base max-w-xl">
+        Explore purpose-built tools for retro handheld gaming and interactive multiplayer projects.
+      </p>
+    </div>
+
+    <!-- Category Filter & Grid -->
+    <ProjectGrid showFilters={true} />
+  </section>
+
+  <!-- fskit & Andromeda Tech Spotlight -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-slate-800 relative overflow-hidden">
+      <!-- Glow decoration -->
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/30 mb-4">
+            <span>Unified Architecture</span>
+          </div>
+          <h2 class="text-3xl font-extrabold text-white tracking-tight mb-4">
+            Built on <span class="text-gradient">fskit</span> & muOS Andromeda
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu share <strong>fskit</strong> — a tailored LÖVE2D toolkit providing native screen handling (640×480, 720×480, 720×720), uniform 8-to-10 color themes, pixel font rendering, input abstraction, and clean retro header/footer chrome.
+          </p>
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono text-slate-300">
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-blue-400 font-bold text-sm mb-1">Pixel Perfect</div>
+              <div>Letterboxed & integer scaled for RG35XX LCD & HDMI</div>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="text-purple-400 font-bold text-sm mb-1">Persistent Save</div>
+              <div>Independent of LÖVE save-dir under muOS bind storage</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-950/80 rounded-2xl p-6 border border-slate-800/80 font-mono text-xs text-slate-300 space-y-3">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-slate-500 text-[11px]">
+            <span>fskit/init.lua</span>
+            <span>v0.3.0 Andromeda Look</span>
+          </div>
+          <p class="text-slate-400">
+            -- Shared components across all 5 handheld apps<br />
+            local fskit = &#123;<br />
+            &nbsp;&nbsp;screen = require("fskit.screen"),<br />
+            &nbsp;&nbsp;theme = require("fskit.theme"),<br />
+            &nbsp;&nbsp;input = require("fskit.input"),<br />
+            &nbsp;&nbsp;widgets = require("fskit.ui"),<br />
+            &#125;
+          </p>
+          <div class="pt-2 text-slate-400">
+            <span class="text-emerald-400">✓</span> RG35XX Pro (640×480)<br />
+            <span class="text-emerald-400">✓</span> RG35XX Plus / H / SP (640×480)<br />
+            <span class="text-emerald-400">✓</span> RG35XX 2024 (640×480)<br />
+            <span class="text-emerald-400">✓</span> HDMI Video Out Support
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Steps -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <InstallSteps />
+  </section>
+</Layout>

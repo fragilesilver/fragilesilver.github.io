@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ControlsTable from '../../components/ControlsTable.astro';
+import DeviceBadge from '../../components/DeviceBadge.astro';
+
+const homeControls = [
+  { button: 'D-pad Left/Right', action: 'Cycle template (Retro Dither, etc.)' },
+  { button: 'A', action: 'Start scraping selected systems' },
+  { button: 'X', action: 'Open Single ROM two-column scraper' },
+  { button: 'SELECT', action: 'Open scraping & account settings' },
+  { button: 'B', action: 'Quit to muOS' },
+];
+
+const singleRomControls = [
+  { button: 'D-pad Up/Down', action: 'Navigate ROM list' },
+  { button: 'A', action: 'Scrape artwork and metadata for highlighted ROM' },
+  { button: 'X', action: 'Download game manual to ROMS/Game Manuals/' },
+  { button: 'Y', action: 'Toggle filter: show missing artwork only' },
+  { button: 'SELECT', action: 'Open settings' },
+  { button: 'B', action: 'Return back to main screen' },
+];
+---
+
+<Layout
+  title="ScrapMu • Box Art & Metadata Scraper for muOS Andromeda"
+  description="Next-generation scraper for muOS Andromeda combining Skyscraper template compositing with Artie descriptions and a live web dashboard."
+>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    
+    <!-- Hero Header -->
+    <div class="glass-panel rounded-3xl p-8 sm:p-10 border border-slate-800 mb-12 relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="flex items-center gap-5">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-900 border border-slate-700 p-2.5 flex items-center justify-center shadow-lg shadow-blue-500/10">
+            <img src="/assets/icons/scrapmu-logo.png" alt="ScrapMu Logo" class="max-w-full max-h-full object-contain" />
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <h1 class="text-2xl sm:text-3xl font-bold text-white">ScrapMu</h1>
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/30">v0.2.0</span>
+            </div>
+            <p class="text-slate-400 text-sm">
+              Box art & metadata scraper with template compositing
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            href="https://github.com/fragilesilver/ScrapMu/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-2.5 rounded-xl font-semibold text-xs text-white bg-blue-600 hover:bg-blue-500 transition-colors flex items-center gap-2 shadow-md shadow-blue-600/20"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            <span>Download .muxapp</span>
+          </a>
+          <a
+            href="https://github.com/fragilesilver/ScrapMu"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-4 py-2.5 rounded-xl font-medium text-xs text-slate-300 bg-slate-800 hover:bg-slate-700 transition-colors flex items-center gap-2 border border-slate-700"
+          >
+            <span>GitHub</span>
+            <span class="text-xs">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-3">
+        <DeviceBadge device="RG35XX Pro, Plus, H, SP, 2024" chipset="H700" />
+        <span class="text-xs font-mono text-slate-400 px-3 py-1 rounded-full bg-slate-900 border border-slate-800">Skyscraper + LÖVE2D</span>
+        <span class="text-xs font-mono text-slate-400 px-3 py-1 rounded-full bg-slate-900 border border-slate-800">ScreenScraper API</span>
+      </div>
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+        The Best of Scrappy & Artie Combined
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="glass-panel rounded-2xl p-5 border border-slate-800/80">
+          <h3 class="text-white font-semibold text-sm mb-1.5">One API Query per ROM</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Conserves ScreenScraper daily quota by querying Skyscraper cache once, then extracting template box art, screenshot preview, and metadata locally.
+          </p>
+        </div>
+        <div class="glass-panel rounded-2xl p-5 border border-slate-800/80">
+          <h3 class="text-white font-semibold text-sm mb-1.5">Retro Dither & Custom Templates</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Full support for Skyscraper <code class="font-mono text-blue-300">artwork.xml</code> template rendering, including the beloved Retro Dither visual style.
+          </p>
+        </div>
+        <div class="glass-panel rounded-2xl p-5 border border-slate-800/80">
+          <h3 class="text-white font-semibold text-sm mb-1.5">Rich Synopsis & Ratings</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Generates Artie-compatible synopsis, developer, publisher, release date, player count, genre, and rating for muOS catalogue text boxes.
+          </p>
+        </div>
+        <div class="glass-panel rounded-2xl p-5 border border-slate-800/80">
+          <h3 class="text-white font-semibold text-sm mb-1.5">Live Local Web Dashboard</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Includes an embedded HTTP dashboard server allowing you to monitor and manage scraping runs over Wi-Fi from your computer or phone.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+        Handheld Gamepad Controls
+      </h2>
+      <ControlsTable title="Home Screen (Live Template Preview)" controls={homeControls} />
+      <ControlsTable title="Single ROM Scraper & Manuals" controls={singleRomControls} />
+    </div>
+
+    <!-- What it writes -->
+    <div class="glass-panel rounded-2xl p-6 border border-slate-800 text-xs text-slate-300 space-y-3 font-mono">
+      <h3 class="font-bold text-sm text-white font-sans">Catalogue Outputs</h3>
+      <p class="font-sans text-slate-400">
+        Writes directly to the muOS system catalogue in standard format:
+      </p>
+      <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800 text-slate-400 space-y-1">
+        <div>box/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Template rendered 3D/2D cover art (e.g. Retro Dither)</div>
+        <div>preview/&nbsp;Direct screenshot capture from ScreenScraper</div>
+        <div>text/&nbsp;&nbsp;&nbsp;&nbsp;Artie-format metadata: synopsis, genre, rating & release year</div>
+      </div>
+    </div>
+
+  </div>
+</Layout>

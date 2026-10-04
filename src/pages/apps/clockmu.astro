@@ -1,0 +1,170 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ControlsTable from '../../components/ControlsTable.astro';
+import DeviceBadge from '../../components/DeviceBadge.astro';
+
+const mainControls = [
+  { button: 'D-pad Up/Down', action: 'Navigate alarm list' },
+  { button: 'A', action: 'Edit selected alarm' },
+  { button: 'X', action: 'Toggle alarm on / off' },
+  { button: 'Y', action: 'Add new alarm' },
+  { button: 'L1', action: 'Delete selected alarm' },
+  { button: 'B', action: 'Quit to muOS' },
+];
+
+const editControls = [
+  { button: 'Up / Down', action: 'Move between fields (Hour / Min / Label / Repeat / Snooze / Enabled)' },
+  { button: 'Left / Right', action: 'Change value (±1 hour/min, cycle options for others)' },
+  { button: 'L1 / R1', action: 'Change minute by ±10' },
+  { button: 'A (on Repeat)', action: 'Toggle selected day on / off' },
+  { button: 'X (on Repeat)', action: 'Clear all days → set to "Once"' },
+  { button: 'Y', action: 'Open preset time picker (every 15 min)' },
+  { button: 'A (other fields)', action: 'Save alarm' },
+  { button: 'B', action: 'Cancel and return' },
+];
+
+const alertControls = [
+  { button: 'A', action: 'Snooze alarm (per-alarm duration)' },
+  { button: 'B', action: 'Dismiss alarm' },
+];
+---
+
+<Layout
+  title="ClockMu • Alarm Clock for muOS Andromeda"
+  description="Full-featured alarm clock application for muOS Andromeda on Anbernic RG35XX devices with multiple alarms, snooze, repeat schedules, and themes."
+>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    
+    <!-- App Hero Header -->
+    <div class="glass-panel rounded-3xl p-8 sm:p-10 border border-slate-800 mb-12 relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="flex items-center gap-5">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-900 border border-slate-700 p-2.5 flex items-center justify-center shadow-lg shadow-blue-500/10">
+            <img src="/assets/icons/clockmu-logo.png" alt="ClockMu Logo" class="max-w-full max-h-full object-contain" />
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <h1 class="text-2xl sm:text-3xl font-bold text-white">ClockMu</h1>
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/30">v1.0.0</span>
+            </div>
+            <p class="text-slate-400 text-sm">
+              Alarm clock app for muOS Andromeda & Anbernic RG35XX
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            href="https://github.com/fragilesilver/ClockMu/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-2.5 rounded-xl font-semibold text-xs text-white bg-blue-600 hover:bg-blue-500 transition-colors flex items-center gap-2 shadow-md shadow-blue-600/20"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            <span>Download .muxapp</span>
+          </a>
+          <a
+            href="https://github.com/fragilesilver/ClockMu"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-4 py-2.5 rounded-xl font-medium text-xs text-slate-300 bg-slate-800 hover:bg-slate-700 transition-colors flex items-center gap-2 border border-slate-700"
+          >
+            <span>GitHub</span>
+            <span class="text-xs">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-3">
+        <DeviceBadge device="RG35XX Pro, Plus, H, SP, 2024" chipset="H700" />
+        <span class="text-xs font-mono text-slate-400 px-3 py-1 rounded-full bg-slate-900 border border-slate-800">LÖVE2D 11.5</span>
+        <span class="text-xs font-mono text-slate-400 px-3 py-1 rounded-full bg-slate-900 border border-slate-800">fskit v0.3</span>
+      </div>
+    </div>
+
+    <!-- Main Screenshot -->
+    <div class="mb-12">
+      <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 p-2 shadow-2xl">
+        <img
+          src="https://github.com/user-attachments/assets/f20cbf92-68a0-4413-8677-75872a1069dd"
+          alt="ClockMu Main Screen"
+          class="w-full h-auto rounded-xl object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+        Core Features
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="glass-panel rounded-2xl p-5 border border-slate-800/80">
+          <h3 class="text-white font-semibold text-sm mb-1.5">Multiple Alarms & Schedules</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Create, manage and label alarms with flexible repeat rules: Daily, Once, or specific days of the week.
+          </p>
+        </div>
+        <div class="glass-panel rounded-2xl p-5 border border-slate-800/80">
+          <h3 class="text-white font-semibold text-sm mb-1.5">Customizable Snooze</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Set individual snooze durations per alarm and easily snooze or dismiss using physical handheld buttons.
+          </p>
+        </div>
+        <div class="glass-panel rounded-2xl p-5 border border-slate-800/80">
+          <h3 class="text-white font-semibold text-sm mb-1.5">15-Minute Preset Picker</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Quickly jump between standard 15-minute intervals without having to step through individual digits.
+          </p>
+        </div>
+        <div class="glass-panel rounded-2xl p-5 border border-slate-800/80">
+          <h3 class="text-white font-semibold text-sm mb-1.5">8 In-App Color Themes</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Choose from Bloody Red, Forest Green, Funky Purple, Intense Orange, Midnight Black, Ocean Blue, Yoga White, and Mustard.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls Tables -->
+    <div class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+        Handheld Gamepad Controls
+      </h2>
+      <ControlsTable title="Main Alarm List Screen" controls={mainControls} />
+      <ControlsTable title="Edit Alarm & Keyboard" controls={editControls} />
+      <ControlsTable title="When Alarm Rings" controls={alertControls} />
+    </div>
+
+    <!-- Secondary Screenshots -->
+    <div class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-6">Interface Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 p-2">
+          <img src="https://github.com/user-attachments/assets/3588e73f-14de-4fd9-9de6-1929ad093cdd" alt="Edit Alarm Screen" class="w-full rounded-lg" />
+          <p class="text-xs text-slate-400 text-center mt-2 font-mono">Alarm Configuration</p>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 p-2">
+          <img src="https://github.com/user-attachments/assets/fd8f3256-7145-45cc-89b9-a87eae28d600" alt="Keyboard Screen" class="w-full rounded-lg" />
+          <p class="text-xs text-slate-400 text-center mt-2 font-mono">On-Screen Keyboard</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Persistence & Notes -->
+    <div class="glass-panel rounded-2xl p-6 border border-slate-800 text-xs text-slate-400 space-y-3">
+      <h3 class="font-bold text-sm text-white">Data Persistence & Volume Restoration</h3>
+      <p>
+        Alarms and user preferences are saved to <code class="font-mono text-blue-300">save/</code> under the application directory via the <code class="font-mono text-purple-300">$CLOCKMU_DATA</code> path exported by the launcher. Alarms persist across reboots and app updates.
+      </p>
+      <p>
+        The launcher automatically maximizes system volume on entry so your alarm is loud and clear, and faithfully restores your previous sound level when exiting back to muOS.
+      </p>
+    </div>
+
+  </div>
+</Layout>
