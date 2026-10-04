@@ -1,0 +1,541 @@
+{"0": {
+    "doc": "BatteryMu",
+    "title": "BatteryMu",
+    "content": "A live battery monitor for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download BatteryMu-1.0.0.muxapp View Source on GitHub . ",
+    "url": "/apps/batterymu.html",
+    
+    "relUrl": "/apps/batterymu.html"
+  },"1": {
+    "doc": "BatteryMu",
+    "title": "Features",
+    "content": ". | Real-Time Telemetry: Live charge %, voltage window, and charging/discharging state. | Battery Health Analysis: Design vs. current voltage readout and calculated battery health. | muOS Charge History: Charge history graph powered by the muOS battery_usage tracker (last charged timestamp, session time, capacity at unplug). | Universal Hardware Fallback: Reads muOS pre-parsed battery values first, falling back to raw AXP2202 sysfs nodes across every RG35XX variant. | 8-Color Theme Picker: Shared in-app theme palette with ClockMu and JarMu. | Safe Scaling: Letterboxed 640×480 render — safe on every RG35XX panel variant and HDMI video output. | . ",
+    "url": "/apps/batterymu.html#features",
+    
+    "relUrl": "/apps/batterymu.html#features"
+  },"2": {
+    "doc": "BatteryMu",
+    "title": "Gamepad Controls",
+    "content": "| Button | Action | . | D-pad Up/Down | Scroll through battery metrics &amp; session logs | . | X | Cycle between 8 in-app theme colors | . | Y | Toggle extended voltage and health telemetry | . | B | Quit to muOS | . ",
+    "url": "/apps/batterymu.html#gamepad-controls",
+    
+    "relUrl": "/apps/batterymu.html#gamepad-controls"
+  },"3": {
+    "doc": "BatteryMu",
+    "title": "Technical Architecture",
+    "content": "BatteryMu targets the X-Powers AXP2202 Power Management IC (PMIC) present on all Allwinner H700 Anbernic handhelds: . /sys/class/power_supply/axp2202-battery/ ├── capacity # Current battery percentage ├── voltage_now # Real-time microvolts ├── current_now # Discharge / charge current └── status # Charging / Discharging / Full . When running bare without muOS helper daemons, BatteryMu reads these nodes directly, ensuring continuous accuracy even during testing. ",
+    "url": "/apps/batterymu.html#technical-architecture",
+    
+    "relUrl": "/apps/batterymu.html#technical-architecture"
+  },"4": {
+    "doc": "BatteryMu",
+    "title": "Installation",
+    "content": ". | Download the latest .muxapp from BatteryMu Releases. | Copy it to ARCHIVE/ on your SD card. | On the device: Applications → Archive Manager, select the file. | Launch from Applications → BatteryMu. | . ",
+    "url": "/apps/batterymu.html#installation",
+    
+    "relUrl": "/apps/batterymu.html#installation"
+  },"5": {
+    "doc": "CHMS Battleship Royale",
+    "title": "CHMS Battleship Royale",
+    "content": "A classroom battle-royale version of Battleship. Teams share one big ocean arena and earn shots by solving Cambridge-style pseudocode problems (IGCSE / O Level 0478 / 2210). The last crew with a ship afloat wins. View Source on GitHub . Students play on their own phones or laptops. The teacher runs the game from a dashboard, and the entire class watches the live naval chart on the classroom projector. ",
+    "url": "/projects/chms-battleship.html",
+    
+    "relUrl": "/projects/chms-battleship.html"
+  },"6": {
+    "doc": "CHMS Battleship Royale",
+    "title": "How It Works",
+    "content": ". | Instant Access: Students scan a QR code from the projector, enter their callsign, choose a team, and play immediately without needing logins or passwords. | Teacher Dashboard (teacher.html): Orchestrate teams, fleet sizes, starting shots, storm radius intervals, and grant bonus shots during play. | Projector Arena (projector.html): Spectator view projecting the communal ocean grid, incoming hits, sunken ships, and closing storm walls. | Specialist Crew Roles: Captain, Gunner, Navigator (sonar scans), Scientist (airstrikes), and Crew (earn shots and suggest targets). | . ",
+    "url": "/projects/chms-battleship.html#how-it-works",
+    
+    "relUrl": "/projects/chms-battleship.html#how-it-works"
+  },"7": {
+    "doc": "CHMS Battleship Royale",
+    "title": "Specialist Roles",
+    "content": "| Role | Responsibility | . | Captain | Places the fleet and assigns specialist positions to crew members | . | Gunner | The primary player authorized to target coordinates and fire artillery | . | Navigator | Solves logic to unlock radar sweeps and sonar scans | . | Scientist | Completes algorithms to recharge tactical airstrikes | . | Crew | Solves questions to earn shots and recommends coordinates to the gunner | . ",
+    "url": "/projects/chms-battleship.html#specialist-roles",
+    
+    "relUrl": "/projects/chms-battleship.html#specialist-roles"
+  },"8": {
+    "doc": "CHMS Battleship Royale",
+    "title": "Cambridge-Style Pseudocode Engine",
+    "content": "To earn shots, students solve genuine IGCSE and O Level syllabus questions covering trace tables, loops, conditional statements, and array manipulations: . DECLARE Total : INTEGER Total &lt;- 0 FOR Count &lt;- 1 TO 5 IF Count MOD 2 = 0 THEN Total &lt;- Total + Count ENDIF NEXT Count OUTPUT Total -- What is the final value of Total? . ",
+    "url": "/projects/chms-battleship.html#cambridge-style-pseudocode-engine",
+    
+    "relUrl": "/projects/chms-battleship.html#cambridge-style-pseudocode-engine"
+  },"9": {
+    "doc": "CHMS Battleship Royale",
+    "title": "Technical Stack",
+    "content": ". | Frontend: HTML5, CSS3, Vanilla ES6 JavaScript, Canvas. | Backend &amp; State: Firebase Realtime Database with anonymous authentication. | Hosting: GitHub Pages. | . ",
+    "url": "/projects/chms-battleship.html#technical-stack",
+    
+    "relUrl": "/projects/chms-battleship.html#technical-stack"
+  },"10": {
+    "doc": "ClockMu",
+    "title": "ClockMu",
+    "content": "An alarm clock for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download ClockMu-1.0.0.muxapp View Source on GitHub . ",
+    "url": "/apps/clockmu.html",
+    
+    "relUrl": "/apps/clockmu.html"
+  },"11": {
+    "doc": "ClockMu",
+    "title": "Features",
+    "content": ". | Multiple Alarms: Set and manage multiple alarms with customized labels. | Repeat Schedules: Configure alarms for Daily, Once, or specific days of the week. | Custom Snooze: Individual snooze durations per alarm. | 15-Minute Presets: Fast preset time picker to quickly set standard times. | 8-Color In-App Themes: Choose between Mustard, Bloody Red, Forest Green, Funky Purple, Intense Orange, Midnight Black, Ocean Blue, and Yoga White. | Data Persistence: Alarms and preferences persist across reboots via $CLOCKMU_DATA independent of LÖVE save-dir under muOS bind storage. | Volume Handling: Launcher maxes volume on alarm start and restores previous volume upon exit. | . ",
+    "url": "/apps/clockmu.html#features",
+    
+    "relUrl": "/apps/clockmu.html#features"
+  },"12": {
+    "doc": "ClockMu",
+    "title": "Gamepad Controls",
+    "content": " ",
+    "url": "/apps/clockmu.html#gamepad-controls",
+    
+    "relUrl": "/apps/clockmu.html#gamepad-controls"
+  },"13": {
+    "doc": "ClockMu",
+    "title": "Main Alarm Screen",
+    "content": "| Button | Action | . | D-pad Up/Down | Navigate alarm list | . | A | Edit selected alarm | . | X | Toggle alarm on / off | . | Y | Add new alarm | . | L1 | Delete selected alarm | . | B | Quit to muOS | . ",
+    "url": "/apps/clockmu.html#main-alarm-screen",
+    
+    "relUrl": "/apps/clockmu.html#main-alarm-screen"
+  },"14": {
+    "doc": "ClockMu",
+    "title": "Edit Alarm &amp; Preset Picker",
+    "content": "| Button | Action | . | Up / Down | Move between fields (Hour / Min / Label / Repeat / Snooze / Enabled) | . | Left / Right | Change value (±1 hour/min, cycle options for others) | . | L1 / R1 | Change minute by ±10 | . | A (on Repeat) | Toggle highlighted day on / off | . | X (on Repeat) | Clear all days → set to “Once” | . | Y | Open 15-minute preset time picker | . | A (other fields) | Save alarm | . | B | Cancel and return | . ",
+    "url": "/apps/clockmu.html#edit-alarm--preset-picker",
+    
+    "relUrl": "/apps/clockmu.html#edit-alarm--preset-picker"
+  },"15": {
+    "doc": "ClockMu",
+    "title": "When Alarm Rings",
+    "content": "| Button | Action | . | A | Snooze alarm (per-alarm snooze duration) | . | B | Dismiss alarm | . ",
+    "url": "/apps/clockmu.html#when-alarm-rings",
+    
+    "relUrl": "/apps/clockmu.html#when-alarm-rings"
+  },"16": {
+    "doc": "ClockMu",
+    "title": "Interface Gallery",
+    "content": "| Edit Alarm | On-Screen Keyboard | . | | | . ",
+    "url": "/apps/clockmu.html#interface-gallery",
+    
+    "relUrl": "/apps/clockmu.html#interface-gallery"
+  },"17": {
+    "doc": "ClockMu",
+    "title": "Installation",
+    "content": ". | Download the latest .muxapp from ClockMu Releases. | Copy it to ARCHIVE/ on your SD card. | On the device: Applications → Archive Manager, select the file. | Launch from Applications → ClockMu. | . ",
+    "url": "/apps/clockmu.html#installation",
+    
+    "relUrl": "/apps/clockmu.html#installation"
+  },"18": {
+    "doc": "fskit Framework",
+    "title": "fskit Framework",
+    "content": "A modular, lightweight LÖVE2D kit providing multi-resolution screen management, theme synchronization, gamepad input abstraction, and persistent state for muOS Andromeda. All 5 companion applications in the fragilesilver suite (ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu) are built on fskit. ",
+    "url": "/toolkits/fskit.html",
+    
+    "relUrl": "/toolkits/fskit.html"
+  },"19": {
+    "doc": "fskit Framework",
+    "title": "Core Modules",
+    "content": "local fskit = { screen = require(\"fskit.screen\"), -- Letterboxing &amp; multi-resolution theme = require(\"fskit.theme\"), -- 10-theme model &amp; persistence input = require(\"fskit.input\"), -- Physical gamepad button abstraction widgets = require(\"fskit.ui\"), -- Headers, footers, lists &amp; dialogs font = require(\"fskit.font\"), -- Barlow &amp; pixel fonts motion = require(\"fskit.motion\"), -- Kinetic physics &amp; transitions } . ",
+    "url": "/toolkits/fskit.html#core-modules",
+    
+    "relUrl": "/toolkits/fskit.html#core-modules"
+  },"20": {
+    "doc": "fskit Framework",
+    "title": "Screen &amp; Resolution Profiles",
+    "content": "fskit.screen provides integer-scaled, letterboxed rendering across three standard handheld aspect ratios: . | Profile | Native Resolution | Device Panels | . | Standard 4:3 | 640 × 480 | RG35XX Pro, Plus, H, SP, 2024 | . | Wide 3:2 | 720 × 480 | 3.5” wide panels | . | Square 1:1 | 720 × 720 | 4.0” square panels | . All profiles support HDMI-out upscaling with clean integer pixel preservation. ",
+    "url": "/toolkits/fskit.html#screen--resolution-profiles",
+    
+    "relUrl": "/toolkits/fskit.html#screen--resolution-profiles"
+  },"21": {
+    "doc": "fskit Framework",
+    "title": "10-Theme Palette",
+    "content": "fskit.themes defines 10 themes (5 color families × dark/light mode) with verified contrast ratios: . | Family | Mode | Highlights | . | Mustard | Dark &amp; Light | Canonical MustardOS warm yellow accent (#DCAE1E) | . | Crimson | Dark &amp; Light | Intense arcade ruby red (#F22E2E) | . | Ocean | Dark &amp; Light | Vibrant deep-sea electric blue (#38BDF8) | . | Funky | Dark &amp; Light | Cosmic arcade purple (#A855F7) | . | Andromeda | Black &amp; White | Deep space ink navy, steel, and stone-cream | . ",
+    "url": "/toolkits/fskit.html#10-theme-palette",
+    
+    "relUrl": "/toolkits/fskit.html#10-theme-palette"
+  },"22": {
+    "doc": "fskit Framework",
+    "title": "Input Abstraction Contract",
+    "content": "Every fskit app adheres to a uniform button contract: . | A — Confirm / Primary Action / Hold-to-confirm | B — Back / Cancel / Quit (with confirmation) | X — Secondary Action / Toggle | Y — Tertiary Action / Option | L1 / R1 — Page navigation | L2 / R2 — Fast jump (100 items) | . ",
+    "url": "/toolkits/fskit.html#input-abstraction-contract",
+    
+    "relUrl": "/toolkits/fskit.html#input-abstraction-contract"
+  },"23": {
+    "doc": "muOS Apps",
+    "title": "muOS Handheld App Suite",
+    "content": "Custom utilities designed specifically for muOS Andromeda on the Anbernic RG35XX handheld family. All applications in this suite share the fskit UI toolkit, ensuring identical 10-color themes, letterboxed multi-resolution display profiles, and tactile button controls. ",
+    "url": "/apps#muos-handheld-app-suite",
+    
+    "relUrl": "/apps#muos-handheld-app-suite"
+  },"24": {
+    "doc": "muOS Apps",
+    "title": "Application Directory",
+    "content": "| App | Version | Highlights | Guide | . | ClockMu | v1.0.0 | Multi-alarm clock, custom snooze, 15-min presets | Read More → | . | JarMu | v1.0.0 | “Shake the jar” weighted random game picker | Read More → | . | BatteryMu | v1.0.0 | Real-time voltage, charge %, health &amp; history graphs | Read More → | . | SwapMu | v1.0.0 | Pickle ↔ RetroArch SRAM save swapper &amp; safe backups | Read More → | . | ScrapMu | v0.2.0 | Skyscraper template box art &amp; Artie metadata scraper | Read More → | . ",
+    "url": "/apps#application-directory",
+    
+    "relUrl": "/apps#application-directory"
+  },"25": {
+    "doc": "muOS Apps",
+    "title": "Hardware Compatibility",
+    "content": "Every app is developed and tested for the Allwinner H700 SoC running muOS Andromeda (2606.0+): . | Device | Panel Resolution | Compatibility Status | . | Anbernic RG35XX Pro | 640×480 IPS | Primary Target &amp; Verified | . | Anbernic RG35XX Plus | 640×480 IPS | Fully Supported | . | Anbernic RG35XX H | 640×480 IPS | Fully Supported | . | Anbernic RG35XX SP | 640×480 IPS | Fully Supported | . | Anbernic RG35XX (2024) | 640×480 IPS | Fully Supported | . | HDMI Video Out | Scaled 640×480 | Supported | . Installation Note: All apps install using the built-in muOS Archive Manager. Check out the step-by-step Installation Guide for instructions on transferring .muxapp files to your SD card. ",
+    "url": "/apps#hardware-compatibility",
+    
+    "relUrl": "/apps#hardware-compatibility"
+  },"26": {
+    "doc": "muOS Apps",
+    "title": "muOS Apps",
+    "content": " ",
+    "url": "/apps",
+    
+    "relUrl": "/apps"
+  },"27": {
+    "doc": "Web & Games",
+    "title": "Web &amp; Games",
+    "content": "Interactive web applications, real-time classroom games, and creative experiments. ",
+    "url": "/projects#web--games",
+    
+    "relUrl": "/projects#web--games"
+  },"28": {
+    "doc": "Web & Games",
+    "title": "Projects Directory",
+    "content": " ",
+    "url": "/projects#projects-directory",
+    
+    "relUrl": "/projects#projects-directory"
+  },"29": {
+    "doc": "Web & Games",
+    "title": "CHMS Battleship Royale",
+    "content": "A real-time multiplayer classroom battle royale where student crews share one big ocean arena and earn shots by solving Cambridge IGCSE / O Level (0478/2210) computer science pseudocode problems. | Tech Stack: Vanilla JavaScript, Firebase Realtime Database, Canvas. | Features: Zero-login QR code join, live teacher dashboard, and spectator projector view. | Documentation: Full Project Details → | . Additional open-source web applications and utilities will be added here as they are released. ",
+    "url": "/projects#chms-battleship-royale",
+    
+    "relUrl": "/projects#chms-battleship-royale"
+  },"30": {
+    "doc": "Web & Games",
+    "title": "Web & Games",
+    "content": " ",
+    "url": "/projects",
+    
+    "relUrl": "/projects"
+  },"31": {
+    "doc": "Toolkits & Libraries",
+    "title": "Toolkits &amp; Libraries",
+    "content": "Reusable foundation frameworks and runtime toolkits developed by fragilesilver. ",
+    "url": "/toolkits#toolkits--libraries",
+    
+    "relUrl": "/toolkits#toolkits--libraries"
+  },"32": {
+    "doc": "Toolkits & Libraries",
+    "title": "Directory",
+    "content": " ",
+    "url": "/toolkits#directory",
+    
+    "relUrl": "/toolkits#directory"
+  },"33": {
+    "doc": "Toolkits & Libraries",
+    "title": "fskit — Handheld UI &amp; Runtime Kit",
+    "content": "A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state for muOS. | Documentation: fskit Architecture Details → | . ",
+    "url": "/toolkits#fskit--handheld-ui--runtime-kit",
+    
+    "relUrl": "/toolkits#fskit--handheld-ui--runtime-kit"
+  },"34": {
+    "doc": "Toolkits & Libraries",
+    "title": "Toolkits & Libraries",
+    "content": " ",
+    "url": "/toolkits",
+    
+    "relUrl": "/toolkits"
+  },"35": {
+    "doc": "Welcome",
+    "title": "fragilesilver",
+    "content": "Developer portfolio and software showcase. Crafting retro handheld utilities, multiplayer educational software, and lightweight developer frameworks. ",
+    "url": "/#fragilesilver",
+    
+    "relUrl": "/#fragilesilver"
+  },"36": {
+    "doc": "Welcome",
+    "title": "About Me",
+    "content": "Hi, I’m fragilesilver. I build purposeful, bloat-free software for retro gaming handhelds (muOS on Anbernic RG35XX) and real-time interactive web games. My work focuses on snappy performance, tactile gamepad controls, and clean architecture that respects hardware resources. ",
+    "url": "/#about-me",
+    
+    "relUrl": "/#about-me"
+  },"37": {
+    "doc": "Welcome",
+    "title": "Featured Works",
+    "content": " ",
+    "url": "/#featured-works",
+    
+    "relUrl": "/#featured-works"
+  },"38": {
+    "doc": "Welcome",
+    "title": "muOS Handheld App Suite",
+    "content": "A cohesive suite of 5 custom applications built on LÖVE2D and fskit for the Anbernic Allwinner H700 family running muOS Andromeda: . | ClockMu (v1.0.0) — Alarm clock with repeat schedules, snooze, 15-minute presets, and 8 color themes. | JarMu (v1.0.0) — “Shake the jar” weighted random game picker with SD1/SD2 scanning, in-app genre editing, and retro CRT shaders. | BatteryMu (v1.0.0) — Live battery monitor with voltage telemetry, battery health analysis, and muOS usage tracking. | SwapMu (v1.0.0) — SRAM save swapper bridging Pickle and RetroArch saves with 3-tier safe backup verification. | ScrapMu (v0.2.0) — Skyscraper template box art compositing (Retro Dither) with Artie descriptions and a live web dashboard. | . All muOS apps are packaged as standalone .muxapp archives. Check out the Installation Guide to learn how to install them via Archive Manager. ",
+    "url": "/#muos-handheld-app-suite",
+    
+    "relUrl": "/#muos-handheld-app-suite"
+  },"39": {
+    "doc": "Welcome",
+    "title": "CHMS Battleship Royale",
+    "content": "A real-time classroom multiplayer battle royale where student crews share one big ocean arena and earn shots by solving Cambridge IGCSE / O Level (0478/2210) pseudocode problems. | Tech: JavaScript, Firebase Realtime Database, Canvas. | Features: Zero-login QR code join, live teacher dashboard, and spectator projector mode. | . ",
+    "url": "/#chms-battleship-royale",
+    
+    "relUrl": "/#chms-battleship-royale"
+  },"40": {
+    "doc": "Welcome",
+    "title": "fskit — Handheld UI Framework",
+    "content": "A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state for muOS. ",
+    "url": "/#fskit--handheld-ui-framework",
+    
+    "relUrl": "/#fskit--handheld-ui-framework"
+  },"41": {
+    "doc": "Welcome",
+    "title": "Core Disciplines",
+    "content": "| Discipline | Focus &amp; Stack | Representative Project | . | Handheld &amp; Embedded Systems | Lua, LÖVE2D, muOS Andromeda, Allwinner H700, Mali GPU | muOS Apps | . | Interactive &amp; Multiplayer Web | TypeScript, JavaScript, Firebase Realtime DB, Canvas | CHMS Battleship | . | Toolkits &amp; Frameworks | Modular UI, Gamepad Abstraction, Theme Engines | fskit | . ",
+    "url": "/#core-disciplines",
+    
+    "relUrl": "/#core-disciplines"
+  },"42": {
+    "doc": "Welcome",
+    "title": "Craftsmanship Philosophy",
+    "content": ". | Lightweight &amp; Bloat-Free: Fast boot times, low memory footprints, and no unnecessary runtime dependencies. | Tactile &amp; Joyful Ergonomics: Built around physical console button inputs ([A], [B], [X], [Y], [L1/R1]) and responsive feedback. | Independent &amp; Resilient: Self-contained packages that persist settings across reboots and operating system updates. | Open Source: Free and open code shared with retro gaming and educational communities. | . ",
+    "url": "/#craftsmanship-philosophy",
+    
+    "relUrl": "/#craftsmanship-philosophy"
+  },"43": {
+    "doc": "Welcome",
+    "title": "Connect &amp; Code",
+    "content": ". | GitHub: github.com/fragilesilver | Firmware Community: muOS.dev | . ",
+    "url": "/#connect--code",
+    
+    "relUrl": "/#connect--code"
+  },"44": {
+    "doc": "Welcome",
+    "title": "Welcome",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"45": {
+    "doc": "Installation Guide",
+    "title": "muOS Package Installation Guide",
+    "content": "How to install .muxapp application packages on muOS Andromeda using the built-in Archive Manager. All companion applications developed by fragilesilver (ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu) are distributed as standalone .muxapp archives. ",
+    "url": "/guide/install#muos-package-installation-guide",
+    
+    "relUrl": "/guide/install#muos-package-installation-guide"
+  },"46": {
+    "doc": "Installation Guide",
+    "title": "Step-by-Step Instructions",
+    "content": " ",
+    "url": "/guide/install#step-by-step-instructions",
+    
+    "relUrl": "/guide/install#step-by-step-instructions"
+  },"47": {
+    "doc": "Installation Guide",
+    "title": "Step 1: Download the .muxapp Package",
+    "content": "Navigate to the GitHub Releases page of your desired app and download the latest compiled .muxapp archive (e.g. ClockMu-1.0.0.muxapp, SwapMu-1.0.0.muxapp). ",
+    "url": "/guide/install#step-1-download-the-muxapp-package",
+    
+    "relUrl": "/guide/install#step-1-download-the-muxapp-package"
+  },"48": {
+    "doc": "Installation Guide",
+    "title": "Step 2: Copy to Your SD Card",
+    "content": "Connect your SD card (either SD1 or SD2) to your computer using a card reader, USB cable, or over local Wi-Fi/SFTP. Place the downloaded .muxapp file into the ARCHIVE/ folder at the root of your SD card: . SDCARD/ ├── ARCHIVE/ │ ├── ClockMu-1.0.0.muxapp &lt;-- Place .muxapp files here │ ├── JarMu-1.0.0.muxapp │ ├── BatteryMu-1.0.0.muxapp │ ├── SwapMu-1.0.0.muxapp │ └── ScrapMu-0.2.0.muxapp ├── ROMS/ └── MUOS/ . ",
+    "url": "/guide/install#step-2-copy-to-your-sd-card",
+    
+    "relUrl": "/guide/install#step-2-copy-to-your-sd-card"
+  },"49": {
+    "doc": "Installation Guide",
+    "title": "Step 3: Open Archive Manager",
+    "content": "Insert the SD card back into your Anbernic handheld and boot into muOS Andromeda. On the home menu: . | Navigate to Applications. | Scroll down and launch Archive Manager. | . ",
+    "url": "/guide/install#step-3-open-archive-manager",
+    
+    "relUrl": "/guide/install#step-3-open-archive-manager"
+  },"50": {
+    "doc": "Installation Guide",
+    "title": "Step 4: Extract and Install",
+    "content": "Inside Archive Manager: . | Highlight your downloaded .muxapp file in the list. | Press A to extract. | muOS will automatically unpack the application binary, launcher script, and custom icon into the system application catalogue. | . ",
+    "url": "/guide/install#step-4-extract-and-install",
+    
+    "relUrl": "/guide/install#step-4-extract-and-install"
+  },"51": {
+    "doc": "Installation Guide",
+    "title": "Step 5: Launch Your App",
+    "content": "Return to Applications. Your newly installed application will appear in the list with its custom icon. Press A to launch! . ",
+    "url": "/guide/install#step-5-launch-your-app",
+    
+    "relUrl": "/guide/install#step-5-launch-your-app"
+  },"52": {
+    "doc": "Installation Guide",
+    "title": "Frequently Asked Questions",
+    "content": " ",
+    "url": "/guide/install#frequently-asked-questions",
+    
+    "relUrl": "/guide/install#frequently-asked-questions"
+  },"53": {
+    "doc": "Installation Guide",
+    "title": "Will updating an app erase my alarms, battery history, or save files?",
+    "content": "No. All apps write user data to persistent storage paths (e.g. $CLOCKMU_DATA, $SWAPMU_DATA) located in save/ subdirectories. Your settings and game saves survive updates and system reboots. ",
+    "url": "/guide/install#will-updating-an-app-erase-my-alarms-battery-history-or-save-files",
+    
+    "relUrl": "/guide/install#will-updating-an-app-erase-my-alarms-battery-history-or-save-files"
+  },"54": {
+    "doc": "Installation Guide",
+    "title": "Can I delete the .muxapp file after installing?",
+    "content": "Yes. Once Archive Manager has unpacked the application, the original archive in ARCHIVE/ is no longer needed and can be safely deleted to free up SD card space. ",
+    "url": "/guide/install#can-i-delete-the-muxapp-file-after-installing",
+    
+    "relUrl": "/guide/install#can-i-delete-the-muxapp-file-after-installing"
+  },"55": {
+    "doc": "Installation Guide",
+    "title": "Do I need SSH or terminal commands?",
+    "content": "No. Everything is installed using the standard muOS graphical interface. ",
+    "url": "/guide/install#do-i-need-ssh-or-terminal-commands",
+    
+    "relUrl": "/guide/install#do-i-need-ssh-or-terminal-commands"
+  },"56": {
+    "doc": "Installation Guide",
+    "title": "Installation Guide",
+    "content": " ",
+    "url": "/guide/install",
+    
+    "relUrl": "/guide/install"
+  },"57": {
+    "doc": "JarMu",
+    "title": "JarMu",
+    "content": "A “shake the jar” random game picker for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download JarMu-1.0.0.muxapp View Source on GitHub . | Splash Screen | The Jar &amp; Shake Meter | . | | | . ",
+    "url": "/apps/jarmu.html",
+    
+    "relUrl": "/apps/jarmu.html"
+  },"58": {
+    "doc": "JarMu",
+    "title": "Features",
+    "content": ". | Dual SD &amp; PortMaster Scan: Scans SD1 and SD2 (ROMS/&lt;system&gt;/) plus PortMaster ports (ports/*.sh). | Weighted Shake Physics: Hold-and-release shake with power meter. Landing in the sweet spot triggers a “perfect shake” bonus. | Smart Weighting: Backlog (×3), favourites (×2), playing (×1.5), beaten (×0.5), with re-pick avoidance. | Filters: Filter by system, genre (any/all match), and status, or toggle “Surprise Me” mode. | In-App Genre Editor: Modify game genres directly on the result screen without altering read-only gamelist.xml files. | CRT Retro Visuals: CRT scanlines, chromatic aberration, neon arcade glow, and synthesized sound effects. | Robust Hand-off: Does not launch games directly, preventing core crashes and ensuring 100% stability across all RG35XX models. | . ",
+    "url": "/apps/jarmu.html#features",
+    
+    "relUrl": "/apps/jarmu.html#features"
+  },"59": {
+    "doc": "JarMu",
+    "title": "Gamepad Controls",
+    "content": " ",
+    "url": "/apps/jarmu.html#gamepad-controls",
+    
+    "relUrl": "/apps/jarmu.html#gamepad-controls"
+  },"60": {
+    "doc": "JarMu",
+    "title": "Jar Screen (Main)",
+    "content": "| Button | Action | . | Hold A | Build up shake power | . | Release A | Tip the jar (sweet spot = perfect shake) | . | L1 / R1 | Open Filters menu | . | Y | Toggle “Surprise Me” mode | . | X | Cycle theme color | . | SELECT | Toggle procedural sound effects | . | B | Quit to muOS | . ",
+    "url": "/apps/jarmu.html#jar-screen-main",
+    
+    "relUrl": "/apps/jarmu.html#jar-screen-main"
+  },"61": {
+    "doc": "JarMu",
+    "title": "Filters Screen",
+    "content": "| Button | Action | . | Up / Down | Move within highlighted column | . | L1 / R1 | Switch column (Systems / Genre / Status) | . | A | Toggle item (or flip genre match mode any / all) | . | Y | Include all items in highlighted column | . | B | Return back to jar | . ",
+    "url": "/apps/jarmu.html#filters-screen",
+    
+    "relUrl": "/apps/jarmu.html#filters-screen"
+  },"62": {
+    "doc": "JarMu",
+    "title": "Result Screen",
+    "content": "| Button | Action | . | A / B | Reshake (return to jar) | . | Y | “Not feeling it” — skip game for this session | . | X | Cycle status (backlog → playing → beaten → favourite) | . | L1 | Open in-app genre editor | . ",
+    "url": "/apps/jarmu.html#result-screen",
+    
+    "relUrl": "/apps/jarmu.html#result-screen"
+  },"63": {
+    "doc": "JarMu",
+    "title": "Installation",
+    "content": ". | Download the latest .muxapp from JarMu Releases. | Copy it to ARCHIVE/ on your SD card. | On the device: Applications → Archive Manager, select the file. | Launch from Applications → JarMu. | . ",
+    "url": "/apps/jarmu.html#installation",
+    
+    "relUrl": "/apps/jarmu.html#installation"
+  },"64": {
+    "doc": "ScrapMu",
+    "title": "ScrapMu",
+    "content": "A box art and metadata scraper for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download ScrapMu-0.2.0.muxapp View Source on GitHub . ",
+    "url": "/apps/scrapmu.html",
+    
+    "relUrl": "/apps/scrapmu.html"
+  },"65": {
+    "doc": "ScrapMu",
+    "title": "Why ScrapMu?",
+    "content": "Existing tools fell short when used alone: . | Scrappy loses the preview image whenever a template is used (because templates like Retro Dither Style.xml declare only &lt;output type=\"cover\"&gt;), and text is limited to description + genre. | Artie provides detailed text metadata (synopsis, genre, developer, publisher, release date, players), but lacks a compositor for template box art. | . ScrapMu combines the best of both: it queries ScreenScraper once per ROM to populate its local cache, generates the template box art offline, and extracts both the screenshot preview and the full Artie-style metadata text block from that same single query. ",
+    "url": "/apps/scrapmu.html#why-scrapmu",
+    
+    "relUrl": "/apps/scrapmu.html#why-scrapmu"
+  },"66": {
+    "doc": "ScrapMu",
+    "title": "Features",
+    "content": ". | Quota Conservation: Only 1 API query per ROM saves daily ScreenScraper quota. | Template Compositing: Full support for Skyscraper artwork.xml templates, including Retro Dither Style. | Rich Text Metadata: Formats complete game descriptions, developer, publisher, year, and rating into the muOS catalogue. | Single ROM &amp; Batch Modes: Scrape full collections automatically or curate individual games with manual lookup refinement. | Embedded Web Dashboard: Run ScrapMu with an embedded HTTP server to monitor and initiate scrapes via Wi-Fi from your computer or phone. | . ",
+    "url": "/apps/scrapmu.html#features",
+    
+    "relUrl": "/apps/scrapmu.html#features"
+  },"67": {
+    "doc": "ScrapMu",
+    "title": "Gamepad Controls",
+    "content": " ",
+    "url": "/apps/scrapmu.html#gamepad-controls",
+    
+    "relUrl": "/apps/scrapmu.html#gamepad-controls"
+  },"68": {
+    "doc": "ScrapMu",
+    "title": "Home Screen",
+    "content": "| Button | Action | . | D-pad Left/Right | Cycle template (Retro Dither, etc.) | . | A | Start scraping selected systems | . | X | Open Single ROM two-column scraper | . | SELECT | Open scraping &amp; account settings | . | B | Quit to muOS | . ",
+    "url": "/apps/scrapmu.html#home-screen",
+    
+    "relUrl": "/apps/scrapmu.html#home-screen"
+  },"69": {
+    "doc": "ScrapMu",
+    "title": "Single ROM Screen",
+    "content": "| Button | Action | . | D-pad Up/Down | Navigate ROM list | . | A | Scrape artwork &amp; metadata for highlighted ROM | . | X | Download manual to ROMS/Game Manuals/ | . | Y | Toggle filter: show missing artwork only | . | SELECT | Open settings | . | B | Return to main screen | . ",
+    "url": "/apps/scrapmu.html#single-rom-screen",
+    
+    "relUrl": "/apps/scrapmu.html#single-rom-screen"
+  },"70": {
+    "doc": "ScrapMu",
+    "title": "Output Structure",
+    "content": "ScrapMu populates the standard muOS catalogue folders: . MUOS/info/catalogue/&lt;system&gt;/ ├── box/ # Template-rendered 3D/2D cover art (e.g. Retro Dither) ├── preview/ # Cached screenshot preview └── text/ # Artie-format metadata: synopsis, genre, rating &amp; release year . ",
+    "url": "/apps/scrapmu.html#output-structure",
+    
+    "relUrl": "/apps/scrapmu.html#output-structure"
+  },"71": {
+    "doc": "ScrapMu",
+    "title": "Installation",
+    "content": ". | Download the latest .muxapp from ScrapMu Releases. | Copy it to ARCHIVE/ on your SD card. | On the device: Applications → Archive Manager, select the file. | Launch from Applications → ScrapMu. | . ",
+    "url": "/apps/scrapmu.html#installation",
+    
+    "relUrl": "/apps/scrapmu.html#installation"
+  },"72": {
+    "doc": "SwapMu",
+    "title": "SwapMu",
+    "content": "A per-game SRAM save swapper between Pickle (muOS frontend libretro layer) and RetroArch, for muOS Andromeda on the Anbernic RG35XX family (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared fskit kit. Download SwapMu-1.0.0.muxapp View Source on GitHub . Andromeda Only: Pickle does not exist on Jacaranda, so there is nothing to swap against on older muOS releases. ",
+    "url": "/apps/swapmu.html",
+    
+    "relUrl": "/apps/swapmu.html"
+  },"73": {
+    "doc": "SwapMu",
+    "title": "What It Does",
+    "content": ". | Core Bridging: Lists libretro cores that have SRAM on either side, using .info files to bridge Pickle folder names (e.g. gambatte) and RetroArch names (e.g. Gambatte). | Game Union: Per core, displays all games and indicates which side each save resides on. | Side-by-Side Comparison: Compare screen puts both saves side-by-side (size, modification date, core version). | Safe SRAM Copy: Copies SRAM only (.srm, plus .rtc sibling if present) in either direction, one game at a time. | Automated Backups: Backs up existing destination saves to save/backup/ (last 5 kept) before overwriting. | 3-Tier Confirmation: Clean copy, overwrite / size mismatch warning, and hold-to-confirm protection for destination saves newer than the source. | . ",
+    "url": "/apps/swapmu.html#what-it-does",
+    
+    "relUrl": "/apps/swapmu.html#what-it-does"
+  },"74": {
+    "doc": "SwapMu",
+    "title": "Gamepad Controls",
+    "content": "| Screen | Buttons | . | Cores List | Up/Down, L1/R1 page, L2/R2 jump 100 — A open, X restore, Y theme, SELECT paths, B quit (asks first) | . | Games List | Same paging — A compare, X filter, Y theme, B back | . | Compare Screen | L1 RetroArch → Pickle, R1 Pickle → RetroArch, B back | . | Folder Picker | Up/Down, L1/R1 page — A use folder, B back | . | Confirm Dialog | A swap (hold A on top tier), B cancel | . ",
+    "url": "/apps/swapmu.html#gamepad-controls",
+    
+    "relUrl": "/apps/swapmu.html#gamepad-controls"
+  },"75": {
+    "doc": "SwapMu",
+    "title": "Paths Handled",
+    "content": "Pickle: &lt;storage&gt;/save/pickles/sram/&lt;so&gt;/&lt;rom-subfolder&gt;/&lt;stem&gt;.srm (+ .rtc/.sum/.bk*) RetroArch: &lt;retroarch savefile_directory&gt;/&lt;CoreName&gt;/&lt;stem&gt;.srm (+ .rtc) Config: &lt;share&gt;/emulator/retroarch/info/&lt;so&gt;_libretro.info Backups: $SWAPMU_DATA/backup/&lt;side&gt;/&lt;so&gt;/&lt;stem&gt;.srm.&lt;epoch&gt; . ",
+    "url": "/apps/swapmu.html#paths-handled",
+    
+    "relUrl": "/apps/swapmu.html#paths-handled"
+  },"76": {
+    "doc": "SwapMu",
+    "title": "Installation",
+    "content": ". | Download the latest .muxapp from SwapMu Releases. | Copy it to ARCHIVE/ on your SD card. | On the device: Applications → Archive Manager, select the file. | Launch from Applications → SwapMu. | . ",
+    "url": "/apps/swapmu.html#installation",
+    
+    "relUrl": "/apps/swapmu.html#installation"
+  }
+}
