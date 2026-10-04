@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="silverCosmic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="50%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#0E121E"/>
+  <rect x="2" y="2" width="116" height="116" rx="26" stroke="url(#silverCosmic)" stroke-width="2" stroke-opacity="0.4"/>
+  <!-- Silver Star / Crystal Shard -->
+  <path d="M60 22 L72 48 L98 60 L72 72 L60 98 L48 72 L22 60 L48 48 Z" fill="url(#silverCosmic)"/>
+  <circle cx="60" cy="60" r="8" fill="#FFFFFF" fill-opacity="0.9"/>
+</svg>
