@@ -1,15 +1,15 @@
 ---
 layout: default
 title: ScrapMu
-parent: muOS Apps
+parent: MustardOS Apps
 nav_order: 5
-description: "Box art and metadata scraper with template compositing for muOS Andromeda."
+description: "Box art and metadata scraper with template compositing for MustardOS Andromeda."
 ---
 
 # ScrapMu
 {: .fs-9 }
 
-A **box art and metadata scraper** for **muOS Andromeda** on the **Anbernic RG35XX family** (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared **fskit** kit.
+A **box art and metadata scraper** for **MustardOS Andromeda** on the **Anbernic RG35XX family** (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared **fskit** kit.
 {: .fs-5 .text-grey-dk-000 }
 
 [Download ScrapMu-0.2.0.muxapp](https://github.com/fragilesilver/ScrapMu/releases){: .btn .btn-primary .fs-4 .mb-4 .mb-md-0 .mr-2 }
@@ -31,7 +31,7 @@ Existing tools fell short when used alone:
 
 * **Quota Conservation**: Only 1 API query per ROM saves daily ScreenScraper quota.
 * **Template Compositing**: Full support for Skyscraper `artwork.xml` templates, including Retro Dither Style.
-* **Rich Text Metadata**: Formats complete game descriptions, developer, publisher, year, and rating into the muOS catalogue.
+* **Rich Text Metadata**: Formats complete game descriptions, developer, publisher, year, and rating into the MustardOS catalogue.
 * **Single ROM & Batch Modes**: Scrape full collections automatically or curate individual games with manual lookup refinement.
 * **Embedded Web Dashboard**: Run ScrapMu with an embedded HTTP server to monitor and initiate scrapes via Wi-Fi from your computer or phone.
 
@@ -47,7 +47,7 @@ Existing tools fell short when used alone:
 | <span class="gamepad-btn btn-a">A</span> | Start scraping selected systems |
 | <span class="gamepad-btn btn-x">X</span> | Open Single ROM two-column scraper |
 | <span class="gamepad-btn">SELECT</span> | Open scraping & account settings |
-| <span class="gamepad-btn btn-b">B</span> | Quit to muOS |
+| <span class="gamepad-btn btn-b">B</span> | Quit to MustardOS |
 
 ### Single ROM Screen
 
@@ -64,7 +64,8 @@ Existing tools fell short when used alone:
 
 ## Output Structure
 
-ScrapMu populates the standard muOS catalogue folders:
+ScrapMu populates the standard MustardOS catalogue folders:
+
 
 ```
 MUOS/info/catalogue/<system>/

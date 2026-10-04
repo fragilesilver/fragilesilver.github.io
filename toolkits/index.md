@@ -18,6 +18,6 @@ Reusable foundation frameworks and runtime toolkits developed by **fragilesilver
 ## Directory
 
 ### [fskit — Handheld UI & Runtime Kit]({% link toolkits/fskit.md %})
-A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state for muOS.
+A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state for MustardOS.
 
 * **Documentation**: [fskit Architecture Details →]({% link toolkits/fskit.md %})

@@ -24,7 +24,7 @@ heading_anchors: true
 
 aux_links:
   "GitHub": "https://github.com/fragilesilver"
-  "muOS.dev": "https://muos.dev"
+  "MustardOS": "https://muos.dev"
 
 # Navigation
 nav_sort: nav_order

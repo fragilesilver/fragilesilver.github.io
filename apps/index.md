@@ -1,16 +1,16 @@
 ---
 layout: default
-title: muOS Apps
+title: MustardOS Apps
 nav_order: 2
 has_children: true
 permalink: /apps/
-description: "Suite of companion applications for muOS Andromeda on Anbernic RG35XX."
+description: "Suite of companion applications for MustardOS Andromeda on Anbernic RG35XX."
 ---
 
-# muOS Handheld App Suite
+# MustardOS Handheld App Suite
 {: .fs-9 }
 
-Custom utilities designed specifically for **muOS Andromeda** on the **Anbernic RG35XX** handheld family.
+Custom utilities designed specifically for **MustardOS Andromeda** on the **Anbernic RG35XX** handheld family.
 {: .fs-5 .text-grey-dk-000 }
 
 ---
@@ -31,7 +31,7 @@ All applications in this suite share the **[fskit]({% link toolkits/fskit.md %})
 
 ## Hardware Compatibility
 
-Every app is developed and tested for the **Allwinner H700 SoC** running **muOS Andromeda (2606.0+)**:
+Every app is developed and tested for the **Allwinner H700 SoC** running **MustardOS Andromeda (2606.0+)**:
 
 | Device | Panel Resolution | Compatibility Status |
 |:---|:---|:---|
@@ -43,4 +43,5 @@ Every app is developed and tested for the **Allwinner H700 SoC** running **muOS 
 | **HDMI Video Out** | Scaled 640×480 | Supported |
 
 {: .tip }
-> **Installation Note**: All apps install using the built-in muOS Archive Manager. Check out the step-by-step **[Installation Guide]({% link guide/install.md %})** for instructions on transferring `.muxapp` files to your SD card.
+> **Installation Note**: All apps install using the built-in MustardOS Archive Manager. Check out the step-by-step **[Installation Guide]({% link guide/install.md %})** for instructions on transferring `.muxapp` files to your SD card.
+

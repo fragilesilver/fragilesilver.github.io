@@ -1,15 +1,15 @@
 ---
 layout: default
 title: JarMu
-parent: muOS Apps
+parent: MustardOS Apps
 nav_order: 2
-description: "Shake the jar random game selector for muOS Andromeda on Anbernic RG35XX."
+description: "Shake the jar random game selector for MustardOS Andromeda on Anbernic RG35XX."
 ---
 
 # JarMu
 {: .fs-9 }
 
-A "shake the jar" random game picker for **muOS Andromeda** on the **Anbernic RG35XX family** (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared **fskit** kit.
+A "shake the jar" random game picker for **MustardOS Andromeda** on the **Anbernic RG35XX family** (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared **fskit** kit.
 {: .fs-5 .text-grey-dk-000 }
 
 [Download JarMu-1.0.0.muxapp](https://github.com/fragilesilver/JarMu/releases){: .btn .btn-primary .fs-4 .mb-4 .mb-md-0 .mr-2 }
@@ -47,7 +47,8 @@ A "shake the jar" random game picker for **muOS Andromeda** on the **Anbernic RG
 | <span class="gamepad-btn btn-y">Y</span> | Toggle "Surprise Me" mode |
 | <span class="gamepad-btn btn-x">X</span> | Cycle theme color |
 | <span class="gamepad-btn">SELECT</span> | Toggle procedural sound effects |
-| <span class="gamepad-btn btn-b">B</span> | Quit to muOS |
+| <span class="gamepad-btn btn-b">B</span> | Quit to MustardOS |
+
 
 ### Filters Screen
 

@@ -3,13 +3,13 @@ layout: default
 title: Installation Guide
 nav_order: 5
 permalink: /guide/install/
-description: "Step-by-step guide for installing .muxapp packages on muOS Andromeda using Archive Manager."
+description: "Step-by-step guide for installing .muxapp packages on MustardOS Andromeda using Archive Manager."
 ---
 
-# muOS Package Installation Guide
+# MustardOS Package Installation Guide
 {: .fs-9 }
 
-How to install `.muxapp` application packages on **muOS Andromeda** using the built-in **Archive Manager**.
+How to install `.muxapp` application packages on **MustardOS Andromeda** using the built-in **Archive Manager**.
 {: .fs-5 .text-grey-dk-000 }
 
 ---
@@ -39,7 +39,7 @@ SDCARD/
 ```
 
 ### Step 3: Open Archive Manager
-Insert the SD card back into your Anbernic handheld and boot into muOS Andromeda. On the home menu:
+Insert the SD card back into your Anbernic handheld and boot into MustardOS Andromeda. On the home menu:
 1. Navigate to **Applications**.
 2. Scroll down and launch **Archive Manager**.
 
@@ -47,7 +47,7 @@ Insert the SD card back into your Anbernic handheld and boot into muOS Andromeda
 Inside Archive Manager:
 1. Highlight your downloaded `.muxapp` file in the list.
 2. Press <span class="gamepad-btn btn-a">A</span> to extract.
-3. muOS will automatically unpack the application binary, launcher script, and custom icon into the system application catalogue.
+3. MustardOS will automatically unpack the application binary, launcher script, and custom icon into the system application catalogue.
 
 ### Step 5: Launch Your App
 Return to **Applications**. Your newly installed application will appear in the list with its custom icon. Press <span class="gamepad-btn btn-a">A</span> to launch!
@@ -63,4 +63,5 @@ Return to **Applications**. Your newly installed application will appear in the 
 **Yes.** Once Archive Manager has unpacked the application, the original archive in `ARCHIVE/` is no longer needed and can be safely deleted to free up SD card space.
 
 ### Do I need SSH or terminal commands?
-**No.** Everything is installed using the standard muOS graphical interface.
+**No.** Everything is installed using the standard MustardOS graphical interface.
+

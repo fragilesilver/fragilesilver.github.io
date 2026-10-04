@@ -3,13 +3,14 @@ layout: default
 title: fskit Framework
 parent: Toolkits & Libraries
 nav_order: 1
-description: "Shared LÖVE2D toolkit providing display profiles, themes, input abstraction, and persistent state for muOS."
+description: "Shared LÖVE2D toolkit providing display profiles, themes, input abstraction, and persistent state for MustardOS."
 ---
 
 # fskit Framework
 {: .fs-9 }
 
-A modular, lightweight **LÖVE2D kit** providing multi-resolution screen management, theme synchronization, gamepad input abstraction, and persistent state for **muOS Andromeda**.
+A modular, lightweight **LÖVE2D kit** providing multi-resolution screen management, theme synchronization, gamepad input abstraction, and persistent state for **MustardOS Andromeda**.
+
 {: .fs-5 .text-grey-dk-000 }
 
 ---

@@ -1,15 +1,15 @@
 ---
 layout: default
 title: SwapMu
-parent: muOS Apps
+parent: MustardOS Apps
 nav_order: 4
-description: "SRAM save swapper between Pickle and RetroArch on muOS Andromeda."
+description: "SRAM save swapper between Pickle and RetroArch on MustardOS Andromeda."
 ---
 
 # SwapMu
 {: .fs-9 }
 
-A per-game **SRAM save swapper** between **Pickle** (muOS frontend libretro layer) and **RetroArch**, for **muOS Andromeda** on the **Anbernic RG35XX family** (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared **fskit** kit.
+A per-game **SRAM save swapper** between **Pickle** (MustardOS frontend libretro layer) and **RetroArch**, for **MustardOS Andromeda** on the **Anbernic RG35XX family** (all Allwinner H700 — Pro, Plus, H, SP, 2024). Built with LÖVE2D on the shared **fskit** kit.
 {: .fs-5 .text-grey-dk-000 }
 
 [Download SwapMu-1.0.0.muxapp](https://github.com/fragilesilver/SwapMu/releases){: .btn .btn-primary .fs-4 .mb-4 .mb-md-0 .mr-2 }
@@ -18,7 +18,8 @@ A per-game **SRAM save swapper** between **Pickle** (muOS frontend libretro laye
 ---
 
 {: .note }
-> **Andromeda Only**: Pickle does not exist on Jacaranda, so there is nothing to swap against on older muOS releases.
+> **Andromeda Only**: Pickle does not exist on Jacaranda, so there is nothing to swap against on older MustardOS releases.
+
 
 ---
 
