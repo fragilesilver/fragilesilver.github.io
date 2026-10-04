@@ -1,7 +1,7 @@
 export interface Project {
   title: string;
   slug: string;
-  category: 'muOS App' | 'Web & Game' | 'Tool';
+  category: 'muOS App' | 'Web & Game' | 'Framework & Tool';
   version?: string;
   description: string;
   icon: string;
@@ -82,6 +82,18 @@ export const projects: Project[] = [
     href: '/projects/chms-battleship',
     githubUrl: 'https://github.com/fragilesilver/chms-battleship',
     tags: ['JavaScript', 'Firebase', 'IGCSE Computer Science', 'Multiplayer'],
+    featured: true,
+  },
+  {
+    title: 'fskit',
+    slug: 'fskit',
+    category: 'Framework & Tool',
+    version: '0.3.0',
+    description: 'A modular, high-performance LÖVE2D toolkit providing multi-resolution display management (640×480, 720×480, 720×720), gamepad input abstraction, 10 color themes, and persistent state.',
+    icon: '/assets/icons/fskit.svg',
+    href: '/apps',
+    githubUrl: 'https://github.com/fragilesilver',
+    tags: ['Lua', 'LÖVE2D', 'Handheld Framework', 'UI Kit', 'muOS'],
     featured: true,
   },
 ];

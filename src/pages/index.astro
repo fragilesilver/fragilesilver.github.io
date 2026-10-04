@@ -1,28 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import Disciplines from '../components/Disciplines.astro';
 import ProjectGrid from '../components/ProjectGrid.astro';
-import InstallSteps from '../components/InstallSteps.astro';
+import Philosophy from '../components/Philosophy.astro';
 ---
 
 <Layout
-  title="fragilesilver • Handheld Software & Creative Projects"
-  description="Home of ClockMu, JarMu, BatteryMu, SwapMu, ScrapMu for muOS Andromeda on Anbernic RG35XX, plus CHMS Battleship Royale."
+  title="fragilesilver • Developer Portfolio"
+  description="Personal developer portfolio of fragilesilver, showcasing retro handheld software (ClockMu, JarMu, BatteryMu, SwapMu, ScrapMu), fskit, and CHMS Battleship Royale."
 >
-  <!-- Hero Section -->
+  <!-- Personal Developer Hero -->
   <Hero />
 
-  <!-- Main Projects Showcase -->
-  <section id="projects" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Core Specialty Pillars -->
+  <Disciplines />
+
+  <!-- Selected Works & Projects Showcase -->
+  <section id="works" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col items-center text-center mb-12">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-purple-500/10 text-purple-400 border border-purple-500/30 mb-3">
-        <span>Software Showcase</span>
+        <span>Selected Portfolio</span>
       </div>
       <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
-        Apps, Games & Utilities
+        Featured Works & Projects
       </h2>
       <p class="text-slate-400 text-sm sm:text-base max-w-xl">
-        Explore purpose-built tools for retro handheld gaming and interactive multiplayer projects.
+        Explore software across handheld gaming, web multiplayer, and developer toolkits.
       </p>
     </div>
 
@@ -30,62 +34,38 @@ import InstallSteps from '../components/InstallSteps.astro';
     <ProjectGrid showFilters={true} />
   </section>
 
-  <!-- fskit & Andromeda Tech Spotlight -->
-  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-slate-800 relative overflow-hidden">
-      <!-- Glow decoration -->
-      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/30 mb-4">
-            <span>Unified Architecture</span>
-          </div>
-          <h2 class="text-3xl font-extrabold text-white tracking-tight mb-4">
-            Built on <span class="text-gradient">fskit</span> & muOS Andromeda
-          </h2>
-          <p class="text-slate-300 text-sm leading-relaxed mb-6">
-            ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu share <strong>fskit</strong> — a tailored LÖVE2D toolkit providing native screen handling (640×480, 720×480, 720×720), uniform 8-to-10 color themes, pixel font rendering, input abstraction, and clean retro header/footer chrome.
-          </p>
-          <div class="grid grid-cols-2 gap-4 text-xs font-mono text-slate-300">
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="text-blue-400 font-bold text-sm mb-1">Pixel Perfect</div>
-              <div>Letterboxed & integer scaled for RG35XX LCD & HDMI</div>
-            </div>
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="text-purple-400 font-bold text-sm mb-1">Persistent Save</div>
-              <div>Independent of LÖVE save-dir under muOS bind storage</div>
-            </div>
-          </div>
+  <!-- muOS Handheld Suite Portal Banner -->
+  <section class="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="glass-panel rounded-3xl p-8 sm:p-10 border border-slate-800 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-amber-500/10 text-amber-400 border border-amber-500/30 mb-3">
+          <span>Dedicated muOS Andromeda Ecosystem</span>
         </div>
+        <h3 class="text-2xl font-bold text-white mb-2">
+          Looking for the muOS Handheld Apps Suite?
+        </h3>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Visit the dedicated muOS Hub for full technical documentation on ClockMu, JarMu, BatteryMu, SwapMu, and ScrapMu, including gamepad controls, hardware compatibility, and the .muxapp installation guide.
+        </p>
+      </div>
 
-        <div class="bg-slate-950/80 rounded-2xl p-6 border border-slate-800/80 font-mono text-xs text-slate-300 space-y-3">
-          <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-slate-500 text-[11px]">
-            <span>fskit/init.lua</span>
-            <span>v0.3.0 Andromeda Look</span>
-          </div>
-          <p class="text-slate-400">
-            -- Shared components across all 5 handheld apps<br />
-            local fskit = &#123;<br />
-            &nbsp;&nbsp;screen = require("fskit.screen"),<br />
-            &nbsp;&nbsp;theme = require("fskit.theme"),<br />
-            &nbsp;&nbsp;input = require("fskit.input"),<br />
-            &nbsp;&nbsp;widgets = require("fskit.ui"),<br />
-            &#125;
-          </p>
-          <div class="pt-2 text-slate-400">
-            <span class="text-emerald-400">✓</span> RG35XX Pro (640×480)<br />
-            <span class="text-emerald-400">✓</span> RG35XX Plus / H / SP (640×480)<br />
-            <span class="text-emerald-400">✓</span> RG35XX 2024 (640×480)<br />
-            <span class="text-emerald-400">✓</span> HDMI Video Out Support
-          </div>
-        </div>
+      <div class="flex flex-wrap items-center gap-3 shrink-0">
+        <a
+          href="/apps"
+          class="px-6 py-3 rounded-xl font-semibold text-xs text-white bg-blue-600 hover:bg-blue-500 transition-colors shadow-md shadow-blue-500/20"
+        >
+          Explore Handheld Hub →
+        </a>
+        <a
+          href="/guide/install"
+          class="px-5 py-3 rounded-xl font-medium text-xs text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-700 transition-colors"
+        >
+          Install Guide
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Installation Steps -->
-  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <InstallSteps />
-  </section>
+  <!-- Craftsmanship & Philosophy -->
+  <Philosophy />
 </Layout>

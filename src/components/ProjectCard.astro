@@ -1,7 +1,7 @@
 ---
 interface Props {
   title: string;
-  category: 'muOS App' | 'Web & Game' | 'Tool';
+  category: 'muOS App' | 'Web & Game' | 'Framework & Tool';
   version?: string;
   description: string;
   icon: string;
@@ -26,7 +26,7 @@ const {
 function getCategoryColor(cat: string) {
   if (cat === 'muOS App') return 'text-blue-400 bg-blue-500/10 border-blue-500/30';
   if (cat === 'Web & Game') return 'text-purple-400 bg-purple-500/10 border-purple-500/30';
-  return 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30';
+  return 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30';
 }
 ---
 
