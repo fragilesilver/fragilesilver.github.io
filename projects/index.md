@@ -3,7 +3,7 @@ layout: default
 title: Web & Games
 nav_order: 3
 has_children: true
-permalink: /projects
+permalink: /projects/
 description: "Web applications, multiplayer classroom games, and interactive projects."
 ---
 

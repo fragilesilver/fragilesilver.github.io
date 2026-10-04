@@ -2,7 +2,7 @@
 layout: default
 title: Installation Guide
 nav_order: 5
-permalink: /guide/install
+permalink: /guide/install/
 description: "Step-by-step guide for installing .muxapp packages on muOS Andromeda using Archive Manager."
 ---
 

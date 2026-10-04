@@ -5,6 +5,8 @@ theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs
 
 url: https://fragilesilver.github.io
+permalink: pretty
+
 
 # Custom fskit theme
 color_scheme: fskit

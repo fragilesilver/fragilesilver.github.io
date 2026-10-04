@@ -3,7 +3,7 @@ layout: default
 title: Toolkits & Libraries
 nav_order: 4
 has_children: true
-permalink: /toolkits
+permalink: /toolkits/
 description: "Reusable toolkits, runtime abstractions, and developer frameworks."
 ---
 

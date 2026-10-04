@@ -3,7 +3,7 @@ layout: default
 title: muOS Apps
 nav_order: 2
 has_children: true
-permalink: /apps
+permalink: /apps/
 description: "Suite of companion applications for muOS Andromeda on Anbernic RG35XX."
 ---
 
