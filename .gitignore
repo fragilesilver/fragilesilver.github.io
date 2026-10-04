@@ -1,4 +1,8 @@
-# Build and dependency outputs
+# Jekyll & Build outputs
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 node_modules/
 dist/
 .astro/
@@ -14,3 +18,4 @@ pnpm-debug.log*
 # OS metadata
 .DS_Store
 Thumbs.db
+
